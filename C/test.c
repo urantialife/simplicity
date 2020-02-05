@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
-#include <simplicity/elements.h>
+#include <simplicity/bitcoin.h>
 #include "dag.h"
 #include "deserialize.h"
 #include "eval.h"
@@ -9,7 +9,7 @@
 #include "hashBlock.h"
 #include "schnorr0.h"
 #include "schnorr6.h"
-#include "primitive/elements/checkSigHashAllTx1.h"
+#include "primitive/bitcoin/checkSigHashAllTx1.h"
 
 _Static_assert(CHAR_BIT == 8, "Buffers passed to fmemopen presume 8 bit chars");
 
@@ -235,63 +235,53 @@ static void test_occursCheck(void) {
   free(dag);
 }
 
-static void test_elements(void) {
+static void test_bitcoin(void) {
   unsigned char cmr[32], wmr[32];
 
-  printf("Test elements\n");
+  printf("Test bitcoin\n");
   {
     rawTransaction testTx1 = (rawTransaction)
       { .input = (rawInput[])
-                 { { .prevTxid = (unsigned char[32]){"\xeb\x04\xb6\x8e\x9a\x26\xd1\x16\x04\x6c\x76\xe8\xff\x47\x33\x2f\xb7\x1d\xda\x90\xff\x4b\xef\x53\x70\xf2\x52\x26\xd3\xbc\x09\xfc"}
+                 { { .prevTxid = (unsigned char[32]){"\x2c\xfd\x97\x68\x69\x94\xff\x7c\x39\x68\xfb\xef\x08\xbf\x4c\x11\x10\x12\xb5\xe4\x4d\xaf\xdb\x81\xd7\x01\x90\x33\xdd\xa8\xd9\x7e"}
                    , .prevIx = 0
                    , .sequence = 0xfffffffe
-                   , .isPegin = false
-                   , .issuance = {0}
-                   , .txo = { .asset = (unsigned char[33]){"\x01\x23\x0f\x4f\x5d\x4b\x7c\x6f\xa8\x45\x80\x6e\xe4\xf6\x77\x13\x45\x9e\x1b\x69\xe8\xe6\x0f\xce\xe2\xe4\x94\x0c\x7a\x0d\x5d\xe1\xb2"}
-                            , .value = (unsigned char[9]){"\x01\x00\x00\x00\x02\x54\x0b\xe4\x00"}
+                   , .txo = { .value = 100000000
                             , .scriptPubKey = {0}
                  } }        }
       , .output = (rawOutput[])
-                  { { .asset = (unsigned char[33]){"\x01\x23\x0f\x4f\x5d\x4b\x7c\x6f\xa8\x45\x80\x6e\xe4\xf6\x77\x13\x45\x9e\x1b\x69\xe8\xe6\x0f\xce\xe2\xe4\x94\x0c\x7a\x0d\x5d\xe1\xb2"}
-                    , .value = (unsigned char[9]){"\x01\x00\x00\x00\x02\x54\x0b\xd7\x1c"}
-                    , .nonce = NULL
-                    , .scriptPubKey = { .code = (unsigned char [26]){"\x19\x76\xa9\x14\x48\x63\x3e\x2c\x0e\xe9\x49\x5d\xd3\xf9\xc4\x37\x32\xc4\x7f\x47\x02\xa3\x62\xc8\x88\xac"}
-                                      , .len = 26
+                  { { .value = 99996700
+                    , .scriptPubKey = { .code = (unsigned char [23]){"\xa9\x14\xd0\x8b\xc6\x78\x88\x5b\x67\xbd\xb8\xa4\x79\x78\xe2\x1e\xc7\x85\x61\xc6\xba\x5e\x87"}
+                                      , .len = 23
                                       }
-                    }
-                  , { .asset = (unsigned char[33]){"\x01\x23\x0f\x4f\x5d\x4b\x7c\x6f\xa8\x45\x80\x6e\xe4\xf6\x77\x13\x45\x9e\x1b\x69\xe8\xe6\x0f\xce\xe2\xe4\x94\x0c\x7a\x0d\x5d\xe1\xb2"}
-                    , .value = (unsigned char[9]){"\x01\x00\x00\x00\x00\x00\x00\x0c\xe4"}
-                    , .nonce = NULL
-                    , .scriptPubKey = {0}
                   } }
       , .numInputs = 1
-      , .numOutputs = 2
+      , .numOutputs = 1
       , .version = 0x00000002
       , .lockTime = 0x00000000
       };
-    transaction* tx1 = elements_simplicity_mallocTransaction(&testTx1);
-    sha256_fromMidstate(cmr, elementsCheckSigHashAllTx1_cmr);
-    sha256_fromMidstate(wmr, elementsCheckSigHashAllTx1_wmr);
+    transaction* tx1 = bitcoin_simplicity_mallocTransaction(&testTx1);
+    sha256_fromMidstate(cmr, bitcoinCheckSigHashAllTx1_cmr);
+    sha256_fromMidstate(wmr, bitcoinCheckSigHashAllTx1_wmr);
     if (tx1) {
       successes++;
       bool execResult;
       {
-        FILE* file = fmemopen_rb(elementsCheckSigHashAllTx1, sizeof_elementsCheckSigHashAllTx1);
-        if (elements_simplicity_execSimplicity(&execResult, tx1, 0, cmr, wmr, file) && execResult) {
+        FILE* file = fmemopen_rb(bitcoinCheckSigHashAllTx1, sizeof_bitcoinCheckSigHashAllTx1);
+        if (bitcoin_simplicity_execSimplicity(&execResult, tx1, 0, cmr, wmr, file) && execResult) {
           successes++;
         } else {
           failures++;
-          printf("execSimplicity of elementsCheckSigHashAllTx1 on tx1 failed\n");
+          printf("execSimplicity of bitcoinCheckSigHashAllTx1 on tx1 failed\n");
         }
         fclose(file);
       }
       {
         /* test the same transaction with a erronous signature. */
-        unsigned char brokenSig[sizeof_elementsCheckSigHashAllTx1];
-        memcpy(brokenSig, elementsCheckSigHashAllTx1, sizeof_elementsCheckSigHashAllTx1);
-        brokenSig[sizeof_elementsCheckSigHashAllTx1 - 1] ^= 0x80;
-        FILE* file = fmemopen_rb(brokenSig, sizeof_elementsCheckSigHashAllTx1);
-        if (elements_simplicity_execSimplicity(&execResult, tx1, 0, NULL, NULL, file) && !execResult) {
+        unsigned char brokenSig[sizeof_bitcoinCheckSigHashAllTx1];
+        memcpy(brokenSig, bitcoinCheckSigHashAllTx1, sizeof_bitcoinCheckSigHashAllTx1);
+        brokenSig[sizeof_bitcoinCheckSigHashAllTx1 - 1] ^= 0x80;
+        FILE* file = fmemopen_rb(brokenSig, sizeof_bitcoinCheckSigHashAllTx1);
+        if (bitcoin_simplicity_execSimplicity(&execResult, tx1, 0, NULL, NULL, file) && !execResult) {
           successes++;
         } else {
           failures++;
@@ -309,44 +299,34 @@ static void test_elements(void) {
   {
     rawTransaction testTx2 = (rawTransaction)
       { .input = (rawInput[])
-                 { { .prevTxid = (unsigned char[32]){"\xeb\x04\xb6\x8e\x9a\x26\xd1\x16\x04\x6c\x76\xe8\xff\x47\x33\x2f\xb7\x1d\xda\x90\xff\x4b\xef\x53\x70\xf2\x52\x26\xd3\xbc\x09\xfc"}
+                 { { .prevTxid = (unsigned char[32]){"\x2c\xfd\x97\x68\x69\x94\xff\x7c\x39\x68\xfb\xef\x08\xbf\x4c\x11\x10\x12\xb5\xe4\x4d\xaf\xdb\x81\xd7\x01\x90\x33\xdd\xa8\xd9\x7e"}
                    , .prevIx = 0
                    , .sequence = 0xffffffff /* Here is the modification. */
-                   , .isPegin = false
-                   , .issuance = {0}
-                   , .txo = { .asset = (unsigned char[33]){"\x01\x23\x0f\x4f\x5d\x4b\x7c\x6f\xa8\x45\x80\x6e\xe4\xf6\x77\x13\x45\x9e\x1b\x69\xe8\xe6\x0f\xce\xe2\xe4\x94\x0c\x7a\x0d\x5d\xe1\xb2"}
-                            , .value = (unsigned char[9]){"\x01\x00\x00\x00\x02\x54\x0b\xe4\x00"}
+                   , .txo = { .value = 100000000
                             , .scriptPubKey = {0}
                  } }        }
       , .output = (rawOutput[])
-                  { { .asset = (unsigned char[33]){"\x01\x23\x0f\x4f\x5d\x4b\x7c\x6f\xa8\x45\x80\x6e\xe4\xf6\x77\x13\x45\x9e\x1b\x69\xe8\xe6\x0f\xce\xe2\xe4\x94\x0c\x7a\x0d\x5d\xe1\xb2"}
-                    , .value = (unsigned char[9]){"\x01\x00\x00\x00\x02\x54\x0b\xd7\x1c"}
-                    , .nonce = NULL
-                    , .scriptPubKey = { .code = (unsigned char [26]){"\x19\x76\xa9\x14\x48\x63\x3e\x2c\x0e\xe9\x49\x5d\xd3\xf9\xc4\x37\x32\xc4\x7f\x47\x02\xa3\x62\xc8\x88\xac"}
-                                      , .len = 26
+                  { { .value = 99996700
+                    , .scriptPubKey = { .code = (unsigned char [23]){"\xa9\x14\xd0\x8b\xc6\x78\x88\x5b\x67\xbd\xb8\xa4\x79\x78\xe2\x1e\xc7\x85\x61\xc6\xba\x5e\x87"}
+                                      , .len = 23
                                       }
-                    }
-                  , { .asset = (unsigned char[33]){"\x01\x23\x0f\x4f\x5d\x4b\x7c\x6f\xa8\x45\x80\x6e\xe4\xf6\x77\x13\x45\x9e\x1b\x69\xe8\xe6\x0f\xce\xe2\xe4\x94\x0c\x7a\x0d\x5d\xe1\xb2"}
-                    , .value = (unsigned char[9]){"\x01\x00\x00\x00\x00\x00\x00\x0c\xe4"}
-                    , .nonce = NULL
-                    , .scriptPubKey = {0}
                   } }
       , .numInputs = 1
-      , .numOutputs = 2
+      , .numOutputs = 1
       , .version = 0x00000002
       , .lockTime = 0x00000000
       };
-    transaction* tx2 = elements_simplicity_mallocTransaction(&testTx2);
+    transaction* tx2 = bitcoin_simplicity_mallocTransaction(&testTx2);
     if (tx2) {
       successes++;
       bool execResult;
       {
-        FILE* file = fmemopen_rb(elementsCheckSigHashAllTx1, sizeof_elementsCheckSigHashAllTx1);
-        if (elements_simplicity_execSimplicity(&execResult, tx2, 0, NULL, NULL, file) && !execResult) {
+        FILE* file = fmemopen_rb(bitcoinCheckSigHashAllTx1, sizeof_bitcoinCheckSigHashAllTx1);
+        if (bitcoin_simplicity_execSimplicity(&execResult, tx2, 0, NULL, NULL, file) && !execResult) {
           successes++;
         } else {
           failures++;
-          printf("execSimplicity of elementsCheckSigHashAllTx1 on tx2 unexpectedly succeeded\n");
+          printf("execSimplicity of bitcoinCheckSigHashAllTx1 on tx2 unexpectedly succeeded\n");
         }
         fclose(file);
       }
@@ -372,7 +352,7 @@ int main(void) {
     test_program("schnorr6", file, false, schnorr6_cmr, schnorr6_wmr);
     fclose(file);
   }
-  test_elements();
+  test_bitcoin();
 
   printf("Successes: %d\n", successes);
   printf("Failures: %d\n", failures);

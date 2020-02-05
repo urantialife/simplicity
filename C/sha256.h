@@ -36,6 +36,21 @@ static inline void WriteBE64(unsigned char* ptr, uint_fast64_t x) {
   ptr[7] = 0xff & x;
 }
 
+/* Unpacks 8 bytes from a 'uint_fast64_t' into an 'unsigned char' array in "little endian" order.
+ *
+ * Precondition: unsigned char ptr[8]
+ */
+static inline void WriteLE64(unsigned char* ptr, uint_fast64_t x) {
+  ptr[7] = (unsigned char)(0xff & x >> 56);
+  ptr[6] = 0xff & x >> 48;
+  ptr[5] = 0xff & x >> 40;
+  ptr[4] = 0xff & x >> 32;
+  ptr[3] = 0xff & x >> 24;
+  ptr[2] = 0xff & x >> 16;
+  ptr[1] = 0xff & x >> 8;
+  ptr[0] = 0xff & x;
+}
+
 /* Unpacks 4 bytes from a 'uint64_t' into an 'unsigned char' array in "little endian" order.
  *
  * Precondition: unsigned char ptr[4]
@@ -125,6 +140,18 @@ static inline void sha256_uchar(sha256_context* ctx, unsigned char x) {
 static inline void sha256_u64be(sha256_context* ctx, uint_fast64_t x) {
   unsigned char buf[8];
   WriteBE64(buf, x);
+  sha256_uchars(ctx, buf, sizeof(buf));
+}
+
+/* Add a 64-bit word to be consumed in little endian order by an ongoing SHA-256 evaluation.
+ * For greater certainty, only the least 64 bits of 'x' are consumed.
+ * Furthermore the bits within each byte are consumed in big endian order.
+ *
+ * Precondition: NULL != ctx;
+ */
+static inline void sha256_u64le(sha256_context* ctx, uint_fast64_t x) {
+  unsigned char buf[8];
+  WriteLE64(buf, x);
   sha256_uchars(ctx, buf, sizeof(buf));
 }
 

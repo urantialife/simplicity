@@ -178,6 +178,7 @@ Test-Suite testsuite
   ghc-options:         -O
   other-modules:       Simplicity.BitMachine.StaticAnalysis.Tests, Simplicity.BitMachine.Tests,
                        Simplicity.Bitcoin.Serialization.Tests,
+                       Simplicity.Bitcoin.Tests,
                        Simplicity.Elements.Tests,
                        Simplicity.Programs.Tests,
                        Simplicity.Ty.Tests

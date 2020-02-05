@@ -1,5 +1,5 @@
-#ifndef SIMPLICITY_ELEMENTS_H
-#define SIMPLICITY_ELEMENTS_H
+#ifndef SIMPLICITY_BITCOIN_H
+#define SIMPLICITY_BITCOIN_H
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -20,48 +20,26 @@ typedef struct rawScript {
   uint32_t len;
 } rawScript;
 
-/* A structure representing data for one output from an Elements transaction.
+/* A structure representing data for one output from a Bitcoin transaction.
  *
- * Invariant: unsigned char asset[33] or asset == NULL;
- *            unsigned char value[value[0] == 1 ? 9 : 33] or value == NULL;
- *            unsigned char nonce[33] or nonce == NULL;
  */
 typedef struct rawOutput {
-  const unsigned char* asset;
-  const unsigned char* value;
-  const unsigned char* nonce;
+  uint64_t value;
   rawScript scriptPubKey;
 } rawOutput;
 
-/* A structure representing data for one input from an Elements transaction, plus the TXO data of the output being redeemed.
+/* A structure representing data for one input from a Bitcoin transaction, plus the TXO data of the output being redeemed.
  *
  * Invariant: unsigned char prevTxid[32];
- *            unsigned char issuance.blindingNonce[32] or (issuance.amount == NULL and issuance.inflationKeys == NULL);
- *            unsigned char issuance.assetEntropy[32] or (issuance.amount == NULL and issuance.inflationKeys == NULL);
- *            unsigned char issuance.amount[issuance.amount[0] == 1 ? 9 : 33] or issuance.amount == NULL;
- *            unsigned char issuance.inflationKeys[issuance.inflaitonKeys[0] == 1 ? 9 : 33] or issuance.inflationKeys == NULL;
- *            unsigned char txo.asset[33] or txo.asset == NULL;
- *            unsigned char txo.value[txo.value[0] == 1 ? 9 : 33] or txo.value == NULL;
  */
 typedef struct rawInput {
   const unsigned char* prevTxid;
-  struct {
-    const unsigned char* blindingNonce;
-    const unsigned char* assetEntropy;
-    const unsigned char* amount;
-    const unsigned char* inflationKeys;
-  } issuance;
-  struct {
-    const unsigned char* asset;
-    const unsigned char* value;
-    rawScript scriptPubKey;
-  } txo;
+  rawOutput txo;
   uint32_t prevIx;
   uint32_t sequence;
-  bool isPegin;
 } rawInput;
 
-/* A structure representing data for an Elements transaction, including the TXO data of each output being redeemed.
+/* A structure representing data for a Bitcoin transaction, including the TXO data of each output being redeemed.
  *
  * Invariant: rawInput input[numInputs];
  *            rawOutput output[numOutputs];
@@ -83,7 +61,7 @@ typedef struct transaction transaction;
  *
  * Precondition: NULL != rawTx
  */
-extern transaction* elements_simplicity_mallocTransaction(const rawTransaction* rawTx);
+extern transaction* bitcoin_simplicity_mallocTransaction(const rawTransaction* rawTx);
 
 /* Deserialize a Simplicity program from 'file' and execute it in the environment of the 'ix'th input of 'tx'.
  * If the file isn't a proper encoding of a Simplicity program, '*success' is set to false.
@@ -102,6 +80,6 @@ extern transaction* elements_simplicity_mallocTransaction(const rawTransaction* 
  *               NULL != wmr implies unsigned char wmr[32]
  *               NULL != file;
  */
-extern bool elements_simplicity_execSimplicity(bool* success, const transaction* tx, uint_fast32_t ix,
-                                               const unsigned char* cmr, const unsigned char* wmr, FILE* file);
+extern bool bitcoin_simplicity_execSimplicity(bool* success, const transaction* tx, uint_fast32_t ix,
+                                              const unsigned char* cmr, const unsigned char* wmr, FILE* file);
 #endif

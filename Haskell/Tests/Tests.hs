@@ -7,6 +7,7 @@ import qualified Simplicity.BitMachine.Tests as BitMachine
 import qualified Simplicity.BitMachine.StaticAnalysis.Tests as StaticAnalysis
 import qualified Simplicity.Programs.Tests as Programs
 import qualified Simplicity.Bitcoin.Serialization.Tests as Serialization
+import qualified Simplicity.Bitcoin.Tests as Bitcoin
 import qualified Simplicity.Elements.Tests as Elements
 import qualified Simplicity.Ty.Tests as Ty
 
@@ -20,5 +21,6 @@ tests = testGroup "Tests"
       , StaticAnalysis.tests
       , Serialization.tests
       , Ty.tests
+      , Bitcoin.tests
       , Elements.tests
       ]

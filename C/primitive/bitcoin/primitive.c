@@ -7,7 +7,7 @@
 #include "../../tag.h"
 #include "../../unreachable.h"
 
-#define PRIMITIVE_TAG(s) "Simplicity\x1F" "Primitive\x1F" "Elements\x1F" s
+#define PRIMITIVE_TAG(s) "Simplicity\x1F" "Primitive\x1F" "Bitcoin\x1F" s
 #define JET_TAG "Simplicity\x1F" "Jet"
 
 /* An enumeration of all the types we need to construct to specify the input and output types of all jets created by 'decodeJet'. */
@@ -24,24 +24,11 @@ enum TypeNamesForJets {
   word256,
   word512,
   word1024,
-  pubkey,
-  sTwo,
   outpnt,
-  sOutpnt,
-  confWord256,
-  sConfWord256,
-  sSConfWord256,
-  confWord64,
-  sConfWord64,
-  sSConfWord64,
-  sWord256,
-  sSWord256,
   sWord32,
-  word2TimesWord256,
-  twoPlusWord4,
-  word2TimesWord256PlusTwoPlusWord4,
-  sWord2TimesWord256PlusTwoPlusWord4,
-  sSWord2TimesWord256PlusTwoPlusWord4,
+  sWord64,
+  sWord256,
+  sOutpnt,
   twoTimesWord32,
   word64TimesTwo,
   word256TimesWord512,
@@ -95,42 +82,16 @@ size_t mallocBoundVars(unification_var** bound_var, size_t* word256_ix, size_t* 
       .bound = { .kind = PRODUCT, .arg = { &(*bound_var)[word256], &(*bound_var)[word256] } } };
   (*bound_var)[word1024] = (unification_var){ .isBound = true,
       .bound = { .kind = PRODUCT, .arg = { &(*bound_var)[word512], &(*bound_var)[word512] } } };
-  (*bound_var)[pubkey] = (unification_var){ .isBound = true,
-      .bound = { .kind = PRODUCT, .arg = { &(*bound_var)[two], &(*bound_var)[word256] } } };
-  (*bound_var)[sTwo] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[two] } } };
   (*bound_var)[outpnt] = (unification_var){ .isBound = true,
       .bound = { .kind = PRODUCT, .arg = { &(*bound_var)[word256], &(*bound_var)[word32] } } };
-  (*bound_var)[sOutpnt] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[outpnt] } } };
-  (*bound_var)[confWord256] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[pubkey], &(*bound_var)[word256] } } };
-  (*bound_var)[sConfWord256] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[confWord256] } } };
-  (*bound_var)[sSConfWord256] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[sConfWord256] } } };
-  (*bound_var)[confWord64] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[pubkey], &(*bound_var)[word64] } } };
-  (*bound_var)[sConfWord64] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[confWord64] } } };
-  (*bound_var)[sSConfWord64] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[sConfWord64] } } };
-  (*bound_var)[sWord256] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[word256] } } };
-  (*bound_var)[sSWord256] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[sWord256] } } };
   (*bound_var)[sWord32] = (unification_var){ .isBound = true,
       .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[word32] } } };
-  (*bound_var)[word2TimesWord256] = (unification_var){ .isBound = true,
-      .bound = { .kind = PRODUCT, .arg = { &(*bound_var)[word2], &(*bound_var)[word256] } } };
-  (*bound_var)[twoPlusWord4] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[two], &(*bound_var)[word4] } } };
-  (*bound_var)[word2TimesWord256PlusTwoPlusWord4] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM, .arg = { &(*bound_var)[word2TimesWord256], &(*bound_var)[twoPlusWord4] } } };
-  (*bound_var)[sWord2TimesWord256PlusTwoPlusWord4] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[word2TimesWord256PlusTwoPlusWord4] } } };
-  (*bound_var)[sSWord2TimesWord256PlusTwoPlusWord4] = (unification_var){ .isBound = true,
-      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[sWord2TimesWord256PlusTwoPlusWord4] } } };
+  (*bound_var)[sWord64] = (unification_var){ .isBound = true,
+      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[word64] } } };
+  (*bound_var)[sWord256] = (unification_var){ .isBound = true,
+      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[word256] } } };
+  (*bound_var)[sOutpnt] = (unification_var){ .isBound = true,
+      .bound = { .kind = SUM,     .arg = { &(*bound_var)[one], &(*bound_var)[outpnt] } } };
   (*bound_var)[twoTimesWord32] = (unification_var){ .isBound = true,
       .bound = { .kind = PRODUCT, .arg = { &(*bound_var)[two], &(*bound_var)[word32] } } };
   (*bound_var)[word64TimesTwo] = (unification_var){ .isBound = true,
@@ -145,7 +106,7 @@ size_t mallocBoundVars(unification_var** bound_var, size_t* word256_ix, size_t* 
   return NumberOfTypeNames - 1;
 };
 
-/* An enumeration of the names of Elements specific jets and primitives. */
+/* An enumeration of the names of Bitcoin specific jets and primitives. */
 typedef enum jetName
 { ADDER32
 , SUBTRACTOR32
@@ -157,40 +118,22 @@ typedef enum jetName
 , SCHNORRASSERT
 , VERSION
 , LOCKTIME
-, INPUTISPEGIN
-, INPUTPREVOUTPOINT
-, INPUTASSET
-, INPUTAMOUNT
-, INPUTSCRIPTHASH
-, INPUTSEQUENCE
-, INPUTISSUANCEBLINDING
-, INPUTISSUANCECONTRACT
-, INPUTISSUANCEENTROPY
-, INPUTISSUANCEASSETAMT
-, INPUTISSUANCETOKENAMT
-, OUTPUTASSET
-, OUTPUTAMOUNT
-, OUTPUTNONCE
-, OUTPUTSCRIPTHASH
-, OUTPUTNULLDATUM
-, SCRIPTCMR
-, CURRENTINDEX
-, CURRENTISPEGIN
-, CURRENTPREVOUTPOINT
-, CURRENTASSET
-, CURRENTAMOUNT
-, CURRENTSCRIPTHASH
-, CURRENTSEQUENCE
-, CURRENTISSUANCEBLINDING
-, CURRENTISSUANCECONTRACT
-, CURRENTISSUANCEENTROPY
-, CURRENTISSUANCEASSETAMT
-, CURRENTISSUANCETOKENAMT
 , INPUTSHASH
 , OUTPUTSHASH
 , NUMINPUTS
+, TOTALINPUTVALUE
+, CURRENTPREVOUTPOINT
+, CURRENTVALUE
+, CURRENTSEQUENCE
+, CURRENTINDEX
+, INPUTPREVOUTPOINT
+, INPUTVALUE
+, INPUTSEQUENCE
 , NUMOUTPUTS
-, FEE
+, TOTALOUTPUTVALUE
+, OUTPUTVALUE
+, OUTPUTSCRIPTHASH
+, SCRIPTCMR
 , NUMBER_OF_JET_NAMES
 } jetName;
 
@@ -201,7 +144,7 @@ static int32_t either(jetName* result, jetName a, jetName b, bitstream* stream) 
   return 0;
 }
 
-/* Decode an Elements specific jet name from 'stream' into 'result'.
+/* Decode a Bitcoin specific jet name from 'stream' into 'result'.
  * All jets begin with a bit prefix of '1' which needs to have already been consumed from the 'stream'.
  * Returns 'ERR_DATA_OUT_OF_RANGE' if the stream's prefix doesn't match any valid code for a jet.
  * Returns 'ERR_BITSTRING_EOF' if not enough bits are available in the 'stream'.
@@ -216,44 +159,26 @@ static int32_t decodePrimitive(jetName* result, bitstream* stream) {
   int32_t bit = getBit(stream);
   if (bit < 0) return bit;
   if (!bit) {
-    int32_t code = getNBits(5, stream);
+    int32_t code = getNBits(4, stream);
     if (code < 0) return code;
 
     switch (code) {
      case 0x0: return either(result, VERSION, LOCKTIME, stream);
-     case 0x1: *result = INPUTISPEGIN; return 0;
-     case 0x2: *result = INPUTPREVOUTPOINT; return 0;
-     case 0x3: *result = INPUTASSET; return 0;
-     case 0x4: return either(result, INPUTAMOUNT, INPUTSCRIPTHASH, stream);
-     case 0x5: *result = INPUTSEQUENCE; return 0;
-     case 0x6: *result = INPUTISSUANCEBLINDING; return 0;
-     case 0x7: *result = INPUTISSUANCECONTRACT; return 0;
-     case 0x8: return either(result, INPUTISSUANCEENTROPY, INPUTISSUANCEASSETAMT, stream);
-     case 0x9: *result = INPUTISSUANCETOKENAMT; return 0;
-     case 0xa: *result = OUTPUTASSET; return 0;
-     case 0xb: *result = OUTPUTAMOUNT; return 0;
-     case 0xc: return either(result, OUTPUTNONCE, OUTPUTSCRIPTHASH, stream);
-     case 0xd: *result = OUTPUTNULLDATUM; return 0;
-     case 0xe: *result = SCRIPTCMR; return 0;
-     case 0xf: *result = CURRENTINDEX; return 0;
-     case 0x10: *result = CURRENTISPEGIN; return 0;
-     case 0x11: *result = CURRENTPREVOUTPOINT; return 0;
-     case 0x12: *result = CURRENTASSET; return 0;
-     case 0x13: *result = CURRENTAMOUNT; return 0;
-     case 0x14: *result = CURRENTSCRIPTHASH; return 0;
-     case 0x15: *result = CURRENTSEQUENCE; return 0;
-     case 0x16: *result = CURRENTISSUANCEBLINDING; return 0;
-     case 0x17: *result = CURRENTISSUANCECONTRACT; return 0;
-     case 0x18: *result = CURRENTISSUANCEENTROPY; return 0;
-     case 0x19: *result = CURRENTISSUANCEASSETAMT; return 0;
-     case 0x1a: *result = CURRENTISSUANCETOKENAMT; return 0;
-     case 0x1b: *result = INPUTSHASH; return 0;
-     case 0x1c: *result = OUTPUTSHASH; return 0;
-     case 0x1d: *result = NUMINPUTS; return 0;
-     case 0x1e: *result = NUMOUTPUTS; return 0;
-     case 0x1f:
-      /* FEE is not yet implemented.  Disable it. */
-      *result = FEE; return ERR_DATA_OUT_OF_RANGE;
+     case 0x1: *result = INPUTSHASH; return 0;
+     case 0x2: *result = OUTPUTSHASH; return 0;
+     case 0x3: *result = NUMINPUTS; return 0;
+     case 0x4: *result = TOTALINPUTVALUE; return 0;
+     case 0x5: *result = CURRENTPREVOUTPOINT; return 0;
+     case 0x6: *result = CURRENTVALUE; return 0;
+     case 0x7: *result = CURRENTSEQUENCE; return 0;
+     case 0x8: return either(result, CURRENTINDEX, INPUTPREVOUTPOINT, stream);
+     case 0x9: *result = INPUTVALUE; return 0;
+     case 0xa: *result = INPUTSEQUENCE; return 0;
+     case 0xb: *result = NUMOUTPUTS; return 0;
+     case 0xc: *result = TOTALOUTPUTVALUE; return 0;
+     case 0xd: *result = OUTPUTVALUE; return 0;
+     case 0xe: *result = OUTPUTSCRIPTHASH; return 0;
+     case 0xf: *result = SCRIPTCMR; return 0;
     }
     assert(false);
     UNREACHABLE;
@@ -270,7 +195,6 @@ static int32_t decodePrimitive(jetName* result, bitstream* stream) {
         case 0x2: return either(result, FULLADDER32, FULLSUBTRACTOR32, stream);
         case 0x3: *result = FULLMULTIPLIER32; return 0;
       }
-
       assert(false);
       UNREACHABLE;
     } else {
@@ -344,180 +268,6 @@ static dag_node jet_node[] = {
     , .sourceIx = one
     , .targetIx = word32
     },
- [INPUTISPEGIN] =
-    { .tag = JET
-    , .jet = inputIsPegin
-    , .sourceIx = word32
-    , .targetIx = sTwo
-    },
- [INPUTPREVOUTPOINT] =
-    { .tag = JET
-    , .jet = inputPrevOutpoint
-    , .sourceIx = word32
-    , .targetIx = sOutpnt
-    },
- [INPUTASSET] =
-    { .tag = JET
-    , .jet = inputAsset
-    , .sourceIx = word32
-    , .targetIx = sConfWord256
-    },
- [INPUTAMOUNT] =
-    { .tag = JET
-    , .jet = inputAmount
-    , .sourceIx = word32
-    , .targetIx = sConfWord64
-    },
- [INPUTSCRIPTHASH] =
-    { .tag = JET
-    , .jet = inputScriptHash
-    , .sourceIx = word32
-    , .targetIx = sWord256
-    },
- [INPUTSEQUENCE] =
-    { .tag = JET
-    , .jet = inputSequence
-    , .sourceIx = word32
-    , .targetIx = sWord32
-    },
- [INPUTISSUANCEBLINDING] =
-    { .tag = JET
-    , .jet = inputIssuanceBlinding
-    , .sourceIx = word32
-    , .targetIx = sSWord256
-    },
- [INPUTISSUANCECONTRACT] =
-    { .tag = JET
-    , .jet = inputIssuanceContract
-    , .sourceIx = word32
-    , .targetIx = sSWord256
-    },
- [INPUTISSUANCEENTROPY] =
-    { .tag = JET
-    , .jet = inputIssuanceEntropy
-    , .sourceIx = word32
-    , .targetIx = sSWord256
-    },
- [INPUTISSUANCEASSETAMT] =
-    { .tag = JET
-    , .jet = inputIssuanceAssetAmt
-    , .sourceIx = word32
-    , .targetIx = sSConfWord64
-    },
- [INPUTISSUANCETOKENAMT] =
-    { .tag = JET
-    , .jet = inputIssuanceTokenAmt
-    , .sourceIx = word32
-    , .targetIx = sSConfWord64
-    },
- [OUTPUTASSET] =
-    { .tag = JET
-    , .jet = outputAsset
-    , .sourceIx = word32
-    , .targetIx = sConfWord256
-    },
- [OUTPUTAMOUNT] =
-    { .tag = JET
-    , .jet = outputAmount
-    , .sourceIx = word32
-    , .targetIx = sConfWord64
-    },
- [OUTPUTNONCE] =
-    { .tag = JET
-    , .jet = outputNonce
-    , .sourceIx = word32
-    , .targetIx = sSConfWord256
-    },
- [OUTPUTSCRIPTHASH] =
-    { .tag = JET
-    , .jet = outputScriptHash
-    , .sourceIx = word32
-    , .targetIx = sWord256
-    },
- [OUTPUTNULLDATUM] =
-    { .tag = JET
-    , .jet = outputNullDatum
-    , .sourceIx = word64
-    , .targetIx = sSWord2TimesWord256PlusTwoPlusWord4
-    },
- [SCRIPTCMR] =
-    { .tag = JET
-    , .jet = scriptCMR
-    , .sourceIx = one
-    , .targetIx = word256
-    },
- [CURRENTINDEX] =
-    { .tag = JET
-    , .jet = currentIndex
-    , .sourceIx = one
-    , .targetIx = word32
-    },
- [CURRENTISPEGIN] =
-    { .tag = JET
-    , .jet = currentIsPegin
-    , .sourceIx = one
-    , .targetIx = two
-    },
- [CURRENTPREVOUTPOINT] =
-    { .tag = JET
-    , .jet = currentPrevOutpoint
-    , .sourceIx = one
-    , .targetIx = outpnt
-    },
- [CURRENTASSET] =
-    { .tag = JET
-    , .jet = currentAsset
-    , .sourceIx = one
-    , .targetIx = confWord256
-    },
- [CURRENTAMOUNT] =
-    { .tag = JET
-    , .jet = currentAmount
-    , .sourceIx = one
-    , .targetIx = confWord64
-    },
- [CURRENTSCRIPTHASH] =
-    { .tag = JET
-    , .jet = currentScriptHash
-    , .sourceIx = one
-    , .targetIx = word256
-    },
- [CURRENTSEQUENCE] =
-    { .tag = JET
-    , .jet = currentSequence
-    , .sourceIx = one
-    , .targetIx = word32
-    },
- [CURRENTISSUANCEBLINDING] =
-    { .tag = JET
-    , .jet = currentIssuanceBlinding
-    , .sourceIx = one
-    , .targetIx = sWord256
-    },
- [CURRENTISSUANCECONTRACT] =
-    { .tag = JET
-    , .jet = currentIssuanceContract
-    , .sourceIx = one
-    , .targetIx = sWord256
-    },
- [CURRENTISSUANCEENTROPY] =
-    { .tag = JET
-    , .jet = currentIssuanceEntropy
-    , .sourceIx = one
-    , .targetIx = sWord256
-    },
- [CURRENTISSUANCEASSETAMT] =
-    { .tag = JET
-    , .jet = currentIssuanceAssetAmt
-    , .sourceIx = one
-    , .targetIx = sConfWord64
-    },
- [CURRENTISSUANCETOKENAMT] =
-    { .tag = JET
-    , .jet = currentIssuanceTokenAmt
-    , .sourceIx = one
-    , .targetIx = sConfWord64
-    },
  [INPUTSHASH] =
     { .tag = JET
     , .jet = inputsHash
@@ -536,17 +286,83 @@ static dag_node jet_node[] = {
     , .sourceIx = one
     , .targetIx = word32
     },
+ [TOTALINPUTVALUE] =
+    { .tag = JET
+    , .jet = totalInputValue
+    , .sourceIx = one
+    , .targetIx = word64
+    },
+ [CURRENTPREVOUTPOINT] =
+    { .tag = JET
+    , .jet = currentPrevOutpoint
+    , .sourceIx = one
+    , .targetIx = outpnt
+    },
+ [CURRENTVALUE] =
+    { .tag = JET
+    , .jet = currentValue
+    , .sourceIx = one
+    , .targetIx = word64
+    },
+ [CURRENTSEQUENCE] =
+    { .tag = JET
+    , .jet = currentSequence
+    , .sourceIx = one
+    , .targetIx = word32
+    },
+ [CURRENTINDEX] =
+    { .tag = JET
+    , .jet = currentIndex
+    , .sourceIx = one
+    , .targetIx = word32
+    },
+ [INPUTPREVOUTPOINT] =
+    { .tag = JET
+    , .jet = inputPrevOutpoint
+    , .sourceIx = word32
+    , .targetIx = sOutpnt
+    },
+ [INPUTVALUE] =
+    { .tag = JET
+    , .jet = inputValue
+    , .sourceIx = word32
+    , .targetIx = sWord64
+    },
+ [INPUTSEQUENCE] =
+    { .tag = JET
+    , .jet = inputSequence
+    , .sourceIx = word32
+    , .targetIx = sWord32
+    },
  [NUMOUTPUTS] =
     { .tag = JET
     , .jet = numOutputs
     , .sourceIx = one
     , .targetIx = word32
     },
- [FEE] =
+ [TOTALOUTPUTVALUE] =
     { .tag = JET
-    , .jet = NULL /* :TODO: FEE not yet implemented. */
-    , .sourceIx = word256
+    , .jet = totalOutputValue
+    , .sourceIx = one
     , .targetIx = word64
+    },
+ [OUTPUTVALUE] =
+    { .tag = JET
+    , .jet = outputValue
+    , .sourceIx = word32
+    , .targetIx = sWord64
+    },
+ [OUTPUTSCRIPTHASH] =
+    { .tag = JET
+    , .jet = outputScriptHash
+    , .sourceIx = word32
+    , .targetIx = sWord256
+    },
+ [SCRIPTCMR] =
+    { .tag = JET
+    , .jet = scriptCMR
+    , .sourceIx = one
+    , .targetIx = word256
     }
  };
 static void static_initialize(void) {
@@ -574,40 +390,22 @@ static void static_initialize(void) {
   }
   MK_TAG(jet_node[VERSION].wmr.s, PRIMITIVE_TAG("version"));
   MK_TAG(jet_node[LOCKTIME].wmr.s, PRIMITIVE_TAG("lockTime"));
-  MK_TAG(jet_node[INPUTISPEGIN].wmr.s, PRIMITIVE_TAG("inputIsPegin"));
-  MK_TAG(jet_node[INPUTPREVOUTPOINT].wmr.s, PRIMITIVE_TAG("inputPrevOutpoint"));
-  MK_TAG(jet_node[INPUTASSET].wmr.s, PRIMITIVE_TAG("inputAsset"));
-  MK_TAG(jet_node[INPUTAMOUNT].wmr.s, PRIMITIVE_TAG("inputAmount"));
-  MK_TAG(jet_node[INPUTSCRIPTHASH].wmr.s, PRIMITIVE_TAG("inputScriptHash"));
-  MK_TAG(jet_node[INPUTSEQUENCE].wmr.s, PRIMITIVE_TAG("inputSequence"));
-  MK_TAG(jet_node[INPUTISSUANCEBLINDING].wmr.s, PRIMITIVE_TAG("inputIssuanceBlinding"));
-  MK_TAG(jet_node[INPUTISSUANCECONTRACT].wmr.s, PRIMITIVE_TAG("inputIssuanceContract"));
-  MK_TAG(jet_node[INPUTISSUANCEENTROPY].wmr.s, PRIMITIVE_TAG("inputIssuanceEntropy"));
-  MK_TAG(jet_node[INPUTISSUANCEASSETAMT].wmr.s, PRIMITIVE_TAG("inputIssuanceAssetAmt"));
-  MK_TAG(jet_node[INPUTISSUANCETOKENAMT].wmr.s, PRIMITIVE_TAG("inputIssuanceTokenAmt"));
-  MK_TAG(jet_node[OUTPUTASSET].wmr.s, PRIMITIVE_TAG("outputAsset"));
-  MK_TAG(jet_node[OUTPUTAMOUNT].wmr.s, PRIMITIVE_TAG("outputAmount"));
-  MK_TAG(jet_node[OUTPUTNONCE].wmr.s, PRIMITIVE_TAG("outputNonce"));
-  MK_TAG(jet_node[OUTPUTSCRIPTHASH].wmr.s, PRIMITIVE_TAG("outputScriptHash"));
-  MK_TAG(jet_node[OUTPUTNULLDATUM].wmr.s, PRIMITIVE_TAG("outputNullDatum"));
-  MK_TAG(jet_node[SCRIPTCMR].wmr.s, PRIMITIVE_TAG("scriptCMR"));
-  MK_TAG(jet_node[CURRENTINDEX].wmr.s, PRIMITIVE_TAG("currentIndex"));
-  MK_TAG(jet_node[CURRENTISPEGIN].wmr.s, PRIMITIVE_TAG("currentIsPegin"));
-  MK_TAG(jet_node[CURRENTPREVOUTPOINT].wmr.s, PRIMITIVE_TAG("currentPrevOutpoint"));
-  MK_TAG(jet_node[CURRENTASSET].wmr.s, PRIMITIVE_TAG("currentAsset"));
-  MK_TAG(jet_node[CURRENTAMOUNT].wmr.s, PRIMITIVE_TAG("currentAmount"));
-  MK_TAG(jet_node[CURRENTSCRIPTHASH].wmr.s, PRIMITIVE_TAG("currentScriptHash"));
-  MK_TAG(jet_node[CURRENTSEQUENCE].wmr.s, PRIMITIVE_TAG("currentSequence"));
-  MK_TAG(jet_node[CURRENTISSUANCEBLINDING].wmr.s, PRIMITIVE_TAG("currentIssuanceBlinding"));
-  MK_TAG(jet_node[CURRENTISSUANCECONTRACT].wmr.s, PRIMITIVE_TAG("currentIssuanceContract"));
-  MK_TAG(jet_node[CURRENTISSUANCEENTROPY].wmr.s, PRIMITIVE_TAG("currentIssuanceEntropy"));
-  MK_TAG(jet_node[CURRENTISSUANCEASSETAMT].wmr.s, PRIMITIVE_TAG("currentIssuanceAssetAmt"));
-  MK_TAG(jet_node[CURRENTISSUANCETOKENAMT].wmr.s, PRIMITIVE_TAG("currentIssuanceTokenAmt"));
   MK_TAG(jet_node[INPUTSHASH].wmr.s, PRIMITIVE_TAG("inputsHash"));
   MK_TAG(jet_node[OUTPUTSHASH].wmr.s, PRIMITIVE_TAG("outputsHash"));
   MK_TAG(jet_node[NUMINPUTS].wmr.s, PRIMITIVE_TAG("numInputs"));
+  MK_TAG(jet_node[TOTALINPUTVALUE].wmr.s, PRIMITIVE_TAG("totalInputValue"));
+  MK_TAG(jet_node[CURRENTPREVOUTPOINT].wmr.s, PRIMITIVE_TAG("currentPrevOutpoint"));
+  MK_TAG(jet_node[CURRENTVALUE].wmr.s, PRIMITIVE_TAG("currentValue"));
+  MK_TAG(jet_node[CURRENTSEQUENCE].wmr.s, PRIMITIVE_TAG("currentSequence"));
+  MK_TAG(jet_node[CURRENTINDEX].wmr.s, PRIMITIVE_TAG("currentIndex"));
+  MK_TAG(jet_node[INPUTPREVOUTPOINT].wmr.s, PRIMITIVE_TAG("inputPrevOutpoint"));
+  MK_TAG(jet_node[INPUTVALUE].wmr.s, PRIMITIVE_TAG("inputValue"));
+  MK_TAG(jet_node[INPUTSEQUENCE].wmr.s, PRIMITIVE_TAG("inputSequence"));
   MK_TAG(jet_node[NUMOUTPUTS].wmr.s, PRIMITIVE_TAG("numOutputs"));
-  MK_TAG(jet_node[FEE].wmr.s, PRIMITIVE_TAG("fee"));
+  MK_TAG(jet_node[TOTALOUTPUTVALUE].wmr.s, PRIMITIVE_TAG("totalOutputValue"));
+  MK_TAG(jet_node[OUTPUTVALUE].wmr.s, PRIMITIVE_TAG("outputValue"));
+  MK_TAG(jet_node[OUTPUTSCRIPTHASH].wmr.s, PRIMITIVE_TAG("outputScriptHash"));
+  MK_TAG(jet_node[SCRIPTCMR].wmr.s, PRIMITIVE_TAG("scriptCMR"));
 }
 
 /* Return a copy of the Simplicity node corresponding to the given Elements specific jet 'name'.
@@ -618,7 +416,7 @@ static dag_node jetNode(jetName name) {
   return jet_node[name];
 }
 
-/* Decode an Elements specific jet from 'stream' into 'node'.
+/* Decode a Bitcoin specific jet from 'stream' into 'node'.
  * All jets begin with a bit prefix of '1' which needs to have already been consumed from the 'stream'.
  * Returns 'ERR_DATA_OUT_OF_RANGE' if the stream's prefix doesn't match any valid code for a jet.
  * Returns 'ERR_BITSTRING_EOF' if not enough bits are available in the 'stream'.
