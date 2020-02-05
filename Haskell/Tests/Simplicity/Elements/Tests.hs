@@ -31,29 +31,28 @@ tx1 = SigTx
       , sigTxLock = 0
       }
  where
-  assetId = Asset . Explicit $ review (over be256) 0x230f4f5d4b7c6fa845806ee4f67713459e1b69e8e60fcee2e4940c7a0d5de1b2
+  assetId = Asset . Explicit $ review (over be256) 0xee56c76b75e615f943fad6bf3256369fcaa8e474ff463a0f2999c2570cdf48b2
   input0 = SigTxInput
     { sigTxiIsPegin = False
-    , sigTxiPreviousOutpoint = Outpoint (review (over be256) 0xeb04b68e9a26d116046c76e8ff47332fb71dda90ff4bef5370f25226d3bc09fc) 0
+    , sigTxiPreviousOutpoint = Outpoint (review (over be256) 0x077364992e3b23c5e7ce9bb6315799f60054bb3f3feff496534c2d0734cd5f27) 1
     , sigTxiTxo = UTXO
         { utxoAsset = assetId
-        , utxoAmount = Amount . Explicit $ 10000000000
-        , utxoScript = BSL.empty
+        , utxoAmount = Amount . Explicit $ 100000000
+        , utxoScript = undefined
         }
-    , sigTxiSequence = 0xfffffffe
+    , sigTxiSequence = 0xfffffffd
     , sigTxiIssuance = Nothing
     }
   output0 = TxOutput
     { txoAsset = assetId
-    , txoAmount = Amount . Explicit $ 9999996700
+    , txoAmount = Amount . Explicit $ 99934464
     , txoNonce = Nothing
     , txoScript = BSL.pack
-        [ 0x19, 0x76, 0xa9, 0x14, 0x48, 0x63, 0x3e, 0x2c, 0x0e, 0xe9, 0x49, 0x5d, 0xd3, 0xf9, 0xc4, 0x37
-        , 0x32, 0xc4, 0x7f, 0x47, 0x02, 0xa3, 0x62, 0xc8, 0x88, 0xac]
+        [ 0xa9, 0x14, 0xf5, 0x61, 0x0c, 0xfd, 0xe7, 0xa9, 0x51, 0x9e, 0x4e, 0x10, 0xbd, 0x5c, 0xb2, 0x19, 0x6e, 0x16, 0xed, 0xba, 0xb2, 0xf1, 0x87 ]
     }
   output1 = TxOutput
     { txoAsset = assetId
-    , txoAmount = Amount . Explicit $ 3300
+    , txoAmount = Amount . Explicit $ 65536
     , txoNonce = Nothing
     , txoScript = BSL.empty
     }
