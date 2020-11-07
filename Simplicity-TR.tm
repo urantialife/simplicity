@@ -7629,31 +7629,2642 @@
     <tformat|<table|<row|<cell|<rep|<text|<samp|`version'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10000000|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`lockTime'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10000001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputIsPegin'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1000001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputPrevOutpoint'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1000010|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputAsset'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1000011|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputAmount'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10001000|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputScriptHash'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10001001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputSequence'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1000101|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputIssuanceBlinding'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1000110|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputIssuanceContract'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1000111|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputIssuanceEntropy'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10010000|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputIssuanceAssetAmt'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10010001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputIssuanceTokenAmt'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1001001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`outputAsset'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1001010|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`outputAmount'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1001011|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`outputNonce'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10011000|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`outputScriptHash'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|10011001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`outputNullDatum'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1001101|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`scriptCMR'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1001110|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentIsPegin'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010000|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentPrevOutpoint'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentAsset'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010010|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentAmount'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010011|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentScriptHash'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010100|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentSequence'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010101|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentIssuanceBlinding'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010110|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentIssuanceContract'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1010111|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentIssuanceEntropy'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1011000|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentIssuanceAssetAmt'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1011001|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`currentIssuanceTokenAmt'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1011010|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`inputsHash'>>|>>|<cell|=>|<cell|<rsub|><verbatim|<around*|[|1011011|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`outputsHash'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1011100|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`numInputs'>>|>>|<cell|=>|<verbatim|<around*|[|1011101|]>><rsub|<2>>>|<row|<cell|<rep|<text|<samp|`numOutputs'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1011110|]>><rsub|<2>>>>|<row|<cell|<rep|<text|<samp|`fee'>>|>>|<cell|=>|<cell|<verbatim|<around*|[|1011111|]>><rsub|<2>>>>>>
   </eqnarray*>
 
-  <section|Jets>
+  <appendix|Catelogue of Jets>
 
-  <with|color|red|UNDER DEVELOPMENT>
+  <assign|paragraph-title|<macro|name|<sectional-normal-bold|<the-paragraph><hspace|0.75em><arg|name>>>><with|color|red|UNDER
+  DEVELOPMENT AND SUBJECT TO CHANGE>
+
+  \;
+
+  We develop a recommended set of jets and provide an interm encoding. \ An
+  encoding ought to be based on how frequenly jets are used, however we do
+  not currently have good estimates of that. \ As an interm measure we
+  develop a heirarchical encoding of jets by category.
+
+  The properties for jets listed below may not fully define the jet's
+  semantics. All jets will be formally specified by a Simplicity program that
+  implements their complete semantics. \ Those formal specificaitons will be
+  found in the Coq library. Implementations MUST implement the COMPLETE
+  specifications as defined in the Coq library.
+
+  <section|<verbatim|110...: >Core Jets>
 
   \;
 
-  <math|<samp|inputIssuance>\<of\><2><rsup|32>\<vdash\><maybe><around*|(|<maybe><around*|(|<2>|)>|)>>
+  The following jets are specified in core Simplicity or Simplicity with
+  assertions, and therefore are applicable to any Simplicity application.
 
-  <math|<samp|inputIssuanceAsset>\<of\><2><rsup|32>\<vdash\><maybe><around*|(|<maybe><around*|(|ExplicitAsset|)>|)>>
+  <subsection|<verbatim|1100...: >Jets for multi-bit logic>
 
-  <math|<samp|currentIssuance>\<of\><value|1>\<vdash\><maybe><around*|(|<2>|)>><with|color|red|Either
-  an issuance or reissuance or neither>
+  It is recomended that jets be supported for multi-bit words up to
+  <math|<2><rsup|256>> in size.
 
-  <math|<samp|currentIssuanceAsset>\<of\><value|1>\<vdash\><maybe><around*|(|ExplicitAsset|)>>
+  <with|color|red|TODO: define <math|bit<rsub|n,m> :
+  <2><rsup|n>\<rightarrow\><2>>>
 
-  <math|<samp|outputIsFee>\<of\><2><rsup|32>\<vdash\><maybe><around*|(|<2>|)>>
+  <subsubsection|<samp|low>>
 
   \;
+
+  <math|<rep|<text|<samp|'low'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|low>><rsub|2<rsup|n>>\<of\><1>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|low>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>||\<rangle\>>|)>|\<rceil\>><rsub|1>=0>
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|low>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>||\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>=0>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|zero>>><rsub|2<rsup|n>> \<assign\>
+  <text|<samp|low>><rsub|2<rsup|n>>\<of\><1>\<vdash\><2><rsup|2<rsup|n>>>
+
+  <subsubsection|<samp|high>>
+
+  \;
+
+  <math|<rep|<text|<samp|'high'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|high>><rsub|2<rsup|n>>\<of\><1>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|high>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>||\<rangle\>>|)>|\<rceil\>><rsub|1>=1>
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|high>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>||\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>=2<rsup|n>-1>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|one>><rsub|1>> \<assign\>
+  <text|<samp|high>><rsub|1>\<of\><1>\<vdash\><2>>
+
+  <subsubsection|<samp|complement>>
+
+  \;
+
+  <math|<rep|<text|<samp|'complement'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|complement>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>> for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|complement>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=1-<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>>
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|complement>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|2<rsup|n>>=2<rsup|n>-1-<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>>
+
+  <subsubsection|<samp|and>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'and'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|and>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|and>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>=1\<wedge\><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|y|)>|\<rceil\>><rsub|1>=1|)>>
+
+  <subsubsection|<samp|or>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'or'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|or>><rsub|2<rsup|n>> :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|or>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>=1\<vee\><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|y|)>|\<rceil\>><rsub|1>=1|)>>
+
+  <subsubsection|<samp|xor>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'xor'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|xor>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|xor>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|1>\<equiv\><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>+<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|y|)>|\<rceil\>><rsub|1><around*|(|mod
+  2|)>>
+
+  <subsubsection|<samp|maj>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'maj'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|maj>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|maj>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,<around*|\<langle\>|y,z|\<rangle\>>|\<rangle\>>|)>|\<rceil\>><rsub|1>=\<chi\><around*|(|2\<leq\><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>+<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|y|)>|\<rceil\>><rsub|1>+<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|z|)>|\<rceil\>><rsub|1>|)>>
+
+  <subsubsection|<samp|xor3>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'xor3'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|xor3>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|xor3>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,<around*|\<langle\>|y,z|\<rangle\>>|\<rangle\>>|)>|\<rceil\>><rsub|1>\<equiv\><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>+<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|y|)>|\<rceil\>><rsub|1>+<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|z|)>|\<rceil\>><rsub|1><around*|(|mod
+  2|)>>
+
+  <subsubsection|<samp|ch>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'ch'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|ch>><rsub|2<rsup|n>> :<2><rsup|2<rsup|n>>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|ch>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,<around*|\<langle\>|y,z|\<rangle\>>|\<rangle\>>|)>|\<rceil\>><rsub|1>=<around*|(|1-<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>|)>\<cdot\><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|y|)>|\<rceil\>><rsub|1>+<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>\<cdot\><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|z|)>|\<rceil\>><rsub|1>>
+
+  <subsubsection|<samp|some>>
+
+  (CAUTION: Not defined when <math|n=0>.)
+
+  <math|<rep|<text|<samp|'some'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|some>><rsub|2<rsup|n>> :<2><rsup|2<rsup|n>>\<vdash\><2>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|some>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>\<neq\>0|)>>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|some>><rsub|1>> \<assign\> <text|<samp|iden>>
+  \<of\> <2>\<vdash\><2>>
+
+  <subsubsection|<samp|all>>
+
+  (CAUTION: Not defined when <math|n=0>.)
+
+  <math|<rep|<text|<samp|'all'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|all>><rsub|2<rsup|n>> :<2><rsup|2<rsup|n>>\<vdash\><2>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|all>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>=2<rsup|n>-1|)>>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|all>><rsub|1>> \<assign\> <text|<samp|iden>> \<of\>
+  <2>\<vdash\><2>>
+
+  <subsubsection|<samp|eq>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'eq'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|eq>><rsub|2<rsup|n>> :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<llbracket\>|<text|<samp|eq>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>=\<chi\><around*|(|x=y|)>>
+
+  <subsubsection|<samp|full-left-shift>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'full-left-shift'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|m+1|>\<cdummy\><rep|n-m|>
+  </math>
+
+  <math|<text|<samp|full-left-shift>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|m>>\<vdash\><2><rsup|2<rsup|m>>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>m\<less\>n>
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|full-left-shift>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+  for <math|0\<leq\>i\<less\>2<rsup|m>>
+
+  <math|bit<rsub|2<rsup|n>,i><around*|(|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|full-left-shift>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|)>=bit<rsub|2<rsup|n>,2<rsup|m>+i><around*|(|x|)>>
+  for <math|0\<leq\>i\<less\>2<rsup|n>-2<rsup|m>>
+
+  <math|bit<rsub|2<rsup|n>,2<rsup|n>-2<rsup|m>+i><around*|(|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|full-left-shift>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|)>=bit<rsub|2<rsup|m>,i><around*|(|y|)>>
+  for <math|0\<leq\>i\<less\>2<rsup|m>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|full-left-shift>><rsub|2<rsup|n>,2<rsup|n>> \<assign\>
+  <text|<samp|iden>> :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>>
+
+  <math|<text|<samp|full-left-shift>><rsub|2<rsup|n>,2<rsup|m>>
+  \<assign\><text|<samp|full-right-shift>><rsub|2<rsup|m>,2<rsup|n>>:<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|m>>\<vdash\><2><rsup|2<rsup|m>>\<times\><2><rsup|2<rsup|n>>>
+  when <math|0\<leq\>n\<less\>m>
+
+  <math|<text|<samp|full-right-shift>><rsub|2<rsup|n>,2<rsup|m>>
+  \<assign\><text|<samp|full-left-shift>><rsub|2<rsup|m>,2<rsup|n>>
+  :<2><rsup|2<rsup|m>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|m>>>
+  when <math|0\<leq\>n\<less\>m>
+
+  <subsubsection|<samp|full-right-shift>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'full-right-shift'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|m+1|>\<cdummy\><rep|n-m|>
+  </math>
+
+  <math|<text|<samp|full-right-shift>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|m>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|m>>>
+  for <math|0\<leq\>m\<less\>n>
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|n>,i><around*|(|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|full-right-shift>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|)>=bit<rsub|k><around*|(|x|)>>
+  for <math|0\<leq\>i\<less\>2<rsup|m>>
+
+  <math|bit<rsub|2<rsup|n>,2<rsup|m>+i><around*|(|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|full-right-shift>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|y|)>>
+  for <math|0\<leq\>i\<less\>2<rsup|n>-2<rsup|m>>
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|full-right-shift>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|)>=bit<rsub|2<rsup|n>,2<rsup|n>-2<rsup|m>+i><around*|(|y|)>>
+  for <math|0\<leq\>i\<less\>2<rsup|m>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|full-right-shift>><rsub|2<rsup|n>,2<rsup|n>> \<assign\>
+  <text|<samp|iden>> :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>>
+
+  <math|<text|<samp|full-right-shift>><rsub|2<rsup|n>,2<rsup|m>>
+  \<assign\><text|<samp|full-left-shift>><rsub|2<rsup|m>,2<rsup|n>>
+  :<2><rsup|2<rsup|m>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|m>>>
+  when <math|0\<leq\>n\<less\>m>
+
+  <math|<text|<samp|full-left-shift>><rsub|2<rsup|n>,2<rsup|m>>
+  \<assign\><text|<samp|full-right-shift>><rsub|2<rsup|m>,2<rsup|n>>:<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|m>>\<vdash\><2><rsup|2<rsup|m>>\<times\><2><rsup|2<rsup|n>>>
+  when <math|0\<leq\>n\<less\>m>
+
+  <subsubsection|<samp|leftmost>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'leftmost'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdot\><rep|m+1|>\<cdummy\><rep|n-m|>
+  </math>
+
+  <math|<text|<samp|leftmost>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|0\<leq\>m\<less\>n>
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|leftmost>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|leftmost>><rsub|2<rsup|n>,2<rsup|n>> \<assign\>
+  <text|<samp|iden>> :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+
+  <subsubsection|<samp|rightmost>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'rightmost'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdot\><rep|m+1|>\<cdummy\><rep|n-m|>
+  </math>
+
+  <math|<text|<samp|rightmost>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|0\<leq\>m\<less\>n>
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|rightmost>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,2<rsup|n>-2<rsup|m>+i><around*|(|x|)>>
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|rightmost>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|2<rsup|m>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>
+  <around*|(|mod 2<rsup|m>|)>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|rightmost>><rsub|2<rsup|n>,2<rsup|n>> \<assign\>
+  <text|<samp|iden>> :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+
+  <subsubsection|<samp|left-pad-low>>
+
+  (Note: derived from <samp|full-left-shift>.)
+
+  <\math>
+    <rep|<text|<samp|'left-pad-low'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>\<cdummy\><rep|m-n|>
+  </math>
+
+  <math|<text|<samp|left-pad-low>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|0\<leq\>n\<less\>m>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|left-pad-low>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=0>
+  when <math|i\<less\>2<rsup|m>-2<rsup|n>>
+
+  <math|bit<rsub|2<rsup|m>,2<rsup|m>-2<rsup|n>+i><around*|(|<around*|\<llbracket\>|<text|<samp|left-pad-low>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+  when <math|i\<less\>2<rsup|n>>
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|left-pad-low>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|2<rsup|m>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>>
+
+  <subsubsection|<samp|left-pad-high>>
+
+  (Note: derived from <samp|full-left-shift>.)
+
+  <\math>
+    <rep|<text|<samp|'left-pad-high'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>\<cdummy\><rep|m-n|>
+  </math>
+
+  <math|<text|<samp|left-pad-high>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|0\<leq\>n\<less\>m>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|left-pad-high>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=1>
+  when <math|i\<less\>2<rsup|m>-2<rsup|n>>
+
+  <math|bit<rsub|2<rsup|m>,2<rsup|m>-2<rsup|n>+i><around*|(|<around*|\<llbracket\>|<text|<samp|left-pad-high>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+  when <math|i\<less\>2<rsup|n>>
+
+  <subsubsection|<samp|left-extend>>
+
+  (Note: derived from <samp|leftmost>, <samp|left-pad-low> and
+  <samp|left-pad-high>.)
+
+  <\math>
+    <rep|<text|<samp|'left-extend'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>\<cdummy\><rep|m-n|>
+  </math>
+
+  <math|<text|<samp|left-extend>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|0\<leq\>n\<less\>m>
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|left-extend>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,0><around*|(|x|)>>
+  when <math|i\<less\>2<rsup|n>-2<rsup|>>
+
+  <math|bit<rsub|2<rsup|m>,2<rsup|m>-2<rsup|n>+i><around*|(|<around*|\<llbracket\>|<text|<samp|left-extend>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+  when <math|i\<less\>2<rsup|n>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|right-extend>><rsub|1,2<rsup|m>>\<assign\><text|<samp|left-extend>><rsub|1,2<rsup|m>>
+  :<2><rsup|>\<vdash\><2><rsup|2<rsup|m>>> for <math|0\<leq\>n\<less\>m>
+
+  <subsubsection|<samp|right-pad-low>>
+
+  (Note: derived from <samp|full-right-shift>.)
+
+  <\math>
+    <rep|<text|<samp|'right-pad-low'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>\<cdummy\><rep|m-n|>
+  </math>
+
+  <math|<text|<samp|right-pad-low>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|0\<leq\>n\<less\>m>
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|right-pad-low>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+  when <math|i\<less\>2<rsup|n>>
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|right-pad-low>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=0>
+  when <math|2<rsup|n>\<leq\>i\<less\>2<rsup|m>>
+
+  <subsubsection|<samp|right-pad-high>>
+
+  (Note: derived from <samp|full-right-shift>.)
+
+  <\math>
+    <rep|<text|<samp|'right-pad-high'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>\<cdummy\><rep|m-n|>
+  </math>
+
+  <math|<text|<samp|right-pad-high>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|0\<leq\>n\<less\>m>
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|right-pad-high>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+  when <math|i\<less\>2<rsup|n>>
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|right-pad-high>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=1>
+  when <math|2<rsup|n>\<leq\>i\<less\>2<rsup|m>>
+
+  <subsubsection|<samp|right-extend>>
+
+  (Note: derived from <samp|rightmost>, <samp|right-pad-low>, and
+  <samp|right-pad-high>.)
+
+  (CAUTION: Not defined when <math|n=0>.)
+
+  <\math>
+    <rep|<text|<samp|'right-extend'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>\<cdummy\><rep|m-n|>
+  </math>
+
+  <math|<text|<samp|right-extend>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|m>>> for
+  <math|1\<leq\>n\<less\>m>\ 
+
+  \;
+
+  Properties:
+
+  <math|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|right-extend>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>=bit<rsub|2<rsup|n>,i><around*|(|x|)>>
+  when <math|i\<less\>2<rsup|n>>
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|m>,i><around*|(|<around*|\<llbracket\>|<text|<samp|right-extend>><rsub|2<rsup|n>,2<rsup|m>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=bit<rsub|2<rsup|n>,2<rsup|n>-1><around*|(|x|)>>
+  when <math|2<rsup|n>\<leq\>i\<less\>2<rsup|m>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|right-extend>><rsub|1,2<rsup|m>>\<assign\><text|<samp|left-extend>><rsub|1,2<rsup|m>>
+  :<2><rsup|>\<vdash\><2><rsup|2<rsup|m>>> for <math|0\<leq\>n\<less\>m>
+
+  <subsubsection|<samp|right-shift-with>>
+
+  Right shift by a signed amount. Negative values are a left shift. \ Bits
+  are filled with the provided value.
+
+  <\math>
+    <rep|<text|<samp|'right-shift-with'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|right-shift-with>><rsub|2<rsup|n>>
+  :<2>\<times\><around*|(|<2><rsup|2<rsup|<around*|\<lceil\>|lg<around*|(|n+1|)>|\<rceil\>>>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  <subsubsection|<samp|right-shift>>
+
+  Right shift by a signed amount. Negative values are a left shift.
+
+  <\math>
+    <rep|<text|<samp|'right-shift'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|right-shift>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|<around*|\<lceil\>|lg<around*|(|n+1|)>|\<rceil\>>>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  <subsubsection|<samp|right-rotate>>
+
+  Right rotate by an amount.
+
+  <\math>
+    <rep|<text|<samp|'right-rotate'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>
+  </math>
+
+  <math|<text|<samp|right-rotate>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|<around*|\<lceil\>|lg<around*|(|n|)>|\<rceil\>>>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|right-rotate>><rsub|1>> \<assign\>
+  <text|<samp|drop>> \<of\> <1>\<times\><2>\<vdash\><2>>
+
+  <subsubsection|<samp|transpose>>
+
+  (CAUTION: Not defined when <math|n=0> or <math|m=0>.)
+
+  (Note: Support only recommened up to <math|2<rsup|n>\<cdot\>2<rsup|m>\<leq\>256>.)
+
+  <\math>
+    <rep|<text|<samp|'transpose'>><rsub|2<rsup|n>,2<rsup|m>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>\<cdummy\><rep|m|>
+  </math>
+
+  <math|<text|<samp|transpose>><rsub|2<rsup|n>,2<rsup|m>>
+  :<2><rsup|2<rsup|n>\<cdummy\>2<rsup|m>>\<vdash\><2><rsup|2<rsup|m>\<cdummy\>2<rsup|n>>>
+  for <math|1\<leq\>n> and <math|1\<leq\>m>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|transpose>><rsub|1,2<rsup|n>> \<assign\>
+  <text|<samp|iden>> :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+
+  <math|<text|<samp|transpose>><rsub|2<rsup|n>,1> \<assign\>
+  <text|<samp|iden>> :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+
+  <subsubsection|<samp|find-first-high>>
+
+  (CAUTION: Not defined when <math|n=0>.)
+
+  <\math>
+    <rep|<text|<samp|'find-first-high'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>
+  </math>
+
+  <math|<text|<samp|find-first-high>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|<around*|\<lceil\>|lg<around*|(|n+1|)>|\<rceil\>>>>>
+  for <math|1\<leq\>n>
+
+  <subsubsection|<samp|find-last-high>>
+
+  (CAUTION: Not defined when <math|n=0>.)
+
+  <\math>
+    <rep|<text|<samp|'find-last-high'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>
+  </math>
+
+  <math|<text|<samp|find-last-high>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|<around*|\<lceil\>|lg<around*|(|n+1|)>|\<rceil\>>>>>
+  for <math|1\<leq\>n>
+
+  <subsubsection|<samp|bit>>
+
+  (CAUTION: Not defined when <math|n\<leq\>1>.)
+
+  <\math>
+    <rep|<text|<samp|'bit'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n-1|>
+  </math>
+
+  <math|<text|<samp|bit>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|<around*|\<lceil\>|lg<around*|(|n|)>|\<rceil\>>>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>>
+  for <math|2\<leq\>n>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|bit>><rsub|1>> \<assign\> <text|<samp|drop>> \<of\>
+  <1>\<times\><2>\<vdash\><2>>
+
+  <math|<math|<text|<samp|bit>><rsub|2>> \<assign\> <text|<samp|ch>><rsub|1>
+  \<of\> <2>\<times\><2><rsup|2>\<vdash\><2>>
+
+  <subsection|<verbatim|110100...: >Jets for arithmetic>
+
+  <subsubsection|<samp|one>>
+
+  (CAUTION: Not defined when <math|n=0>. See Aliases.)
+
+  <math|<rep|<text|<samp|'one'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|one>><rsub|2<rsup|n>>\<of\><1>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|one>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=0>
+  when <math|0\<leq\>i\<less\>2<rsup|n>-1>
+
+  <math|<around*|\<lceil\>|bit<rsub|2<rsup|n>,2<rsup|n>-1><around*|(|<around*|\<llbracket\>|<text|<samp|one>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|1>=1>
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|one>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>||\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>=1>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|one>><rsub|1>> \<assign\>
+  <text|<samp|high>><rsub|1>\<of\><1>\<vdash\><2>>
+
+  <subsubsection|<samp|full-add>>
+
+  (Note: <math|<text|<samp|'full-add'>><rsub|1>> is composed from
+  <samp|`maj`> and <samp|`tri-xor`>.)
+
+  <math|<rep|<text|<samp|'full-add'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|full-add>><rsub|2<rsup|n>>
+  :<2>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|full-add>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|c,<around*|\<langle\>|x,y|\<rangle\>>|\<rangle\>>|\<rceil\>><rsub|1,2<rsup|n>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>+<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>+<around*|\<lceil\>|c<rsub|1>|\<rceil\>><rsub|1>>
+
+  <subsubsection|<samp|add>>
+
+  \;
+
+  <math|<rep|<text|<samp|'add'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|add>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|add>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|1,2<rsup|n>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>+<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>>
+
+  \;
+
+  Aliases:
+
+  <math|<math|<text|<samp|popcount>><rsub|2>> \<assign\>
+  <text|<samp|add>><rsub|1> :<2><rsup|2>\<vdash\><2><rsup|2>>
+
+  <subsubsection|<samp|full-increment>>
+
+  (CAUTION: Not defined when <math|n=0>. See Aliases.)
+
+  <math|<rep|<text|<samp|'full-increment'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|full-increment>><rsub|2<rsup|n>>
+  :<2>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|full-increment>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|c,x|\<rangle\>>|\<rceil\>><rsub|1,2<rsup|n>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>+<around*|\<lceil\>|c<rsub|1>|\<rceil\>><rsub|1>>
+
+  <subsubsection|<samp|increment>>
+
+  \;
+
+  <math|<rep|<text|<samp|'increment'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|increment>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>> for
+  <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|increment>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|1,2<rsup|n>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>+1>
+
+  <subsubsection|<samp|popcount>>
+
+  (CAUTION: Not defined when <math|n\<leq\>1>.)
+
+  <\math>
+    <rep|<text|<samp|'popcount'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n-1|>
+  </math>
+
+  <math|<text|<samp|popcount>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|<around*|\<lceil\>|lg<around*|(|n+1|)>|\<rceil\>>>>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|popcount>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|2<rsup|<around*|\<lceil\>|lg<around*|(|n+1|)>|\<rceil\>>>>=<big|sum><rsub|i=0><rsup|2<rsup|n>-1><around*|\<lceil\>|bit<rsub|2<rsup|n>,i><around*|(|x|)>|\<rceil\>><rsub|1>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|popcount>><rsub|1> \<assign\> <text|<samp|iden>>
+  :<2>\<vdash\><2>>
+
+  <math|<math|<text|<samp|popcount>><rsub|2>> \<assign\>
+  <text|<samp|add>><rsub|1> :<2><rsup|2>\<vdash\><2><rsup|2>>
+
+  <subsubsection|<samp|full-subtract>>
+
+  (Note: composition of <samp|full-add> with <samp|complement> applied to 1st
+  and 3rd arguments).
+
+  <math|<rep|<text|<samp|'full-subtract'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|full-subtract>><rsub|2<rsup|n>>
+  :<2>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|full-subtract>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|c,<around*|\<langle\>|x,y|\<rangle\>>|\<rangle\>>|\<rceil\>><rsub|1,2<rsup|n>>\<equiv\><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>-<around*|\<lceil\>|c<rsub|1>|\<rceil\>><rsub|1><around*|(|mod
+  2<rsup|2<rsup|n>+1>|)>>
+
+  <subsubsection|<samp|subtract>>
+
+  \;
+
+  <math|<rep|<text|<samp|'subtract'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|subtract>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|full-subtract>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|1,2<rsup|n>>\<equiv\><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>><around*|(|mod
+  2<rsup|2<rsup|n>+1>|)>>
+
+  <subsubsection|<samp|negate>>
+
+  (CAUTION: Not defined when <math|n=0>.)
+
+  <math|<rep|<text|<samp|'negate'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|negate>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>> for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|negate>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|2<rsup|n>>\<equiv\>-<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>
+  <around*|(|mod 2<rsup|2<rsup|n>>|)>>
+
+  <subsubsection|<samp|full-decrement>>
+
+  \;
+
+  <math|<rep|<text|<samp|'full-decrement'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|full-decrement>><rsub|2<rsup|n>>
+  :<2>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|full-decrement>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|c,x|\<rangle\>>|\<rceil\>><rsub|1,2<rsup|n>>\<equiv\><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-<around*|\<lceil\>|c<rsub|1>|\<rceil\>><rsub|1><around*|(|mod
+  2<rsup|2<rsup|n>+1>|)>>
+
+  <subsubsection|<samp|decrement>>
+
+  \;
+
+  <math|<rep|<text|<samp|'decrement'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|decrement>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2>\<times\><2><rsup|2<rsup|n>>> for
+  <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|decrement>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|1,2<rsup|n>>\<equiv\><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-1<around*|(|mod
+  2<rsup|2<rsup|n>+1>|)>>
+
+  <subsubsection|<samp|full-multiply>>
+
+  (Note: <math|<text|<samp|'full-multiply'>><rsub|1>> is composed from
+  <math|<text|<samp|'full-add'>><rsub|1>> and <samp|`and`>.)
+
+  <math|<rep|<text|<samp|'full-multiply'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|full-multiply>><rsub|2<rsup|n>>
+  :<around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2><rsup|2<rsup|n+1>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|full-multiplier>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|<around*|\<langle\>|c<rsub|1>,c<rsub|2>|\<rangle\>>,<around*|\<langle\>|x,y|\<rangle\>>|\<rangle\>>|\<rceil\>><rsub|2<rsup|n+1>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>\<cdot\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>+<around*|\<lceil\>|c<rsub|1>|\<rceil\>><rsub|2<rsup|n>>+<around*|\<lceil\>|c<rsub|2>|\<rceil\>><rsub|2<rsup|n>>>
+
+  <subsubsection|<samp|multiply>>
+
+  \;
+
+  <math|<rep|<text|<samp|'multiply'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|multiply>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n+1>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|multiply>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|2<rsup|n+1>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>\<cdot\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>>
+
+  <subsubsection|<verbatim|><samp|is-zero>>
+
+  (CAUTION: Not defined when <math|n=0>. See Aliases.)
+
+  (Note: <samp|complement> of <samp|some>).
+
+  <math|<rep|<text|<samp|'is-zero'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|is-zero>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>=0|)>>
+
+  <subsubsection|<verbatim|><samp|is-one>>
+
+  (CAUTION: Not defined when <math|n=0>. See Aliases.)
+
+  <math|<rep|<text|<samp|'is-one'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|is-one>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>=1|)>>
+
+  <subsubsection|<samp|le> (unsigned)>
+
+  (Note: borrow bit from <samp|subtractor>)
+
+  <math|<rep|<text|<samp|'le'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|le>><rsub|2<rsup|n>> :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|le>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>\<leq\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>|)>>
+
+  <subsubsection|<samp|lt> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'lt'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|lt>><rsub|2<rsup|n>> :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|lt>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>\<less\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>|)>>
+
+  <subsubsection|<samp|min> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'min'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|min>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|z\<leq\><around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|'min'>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>>
+  if and only if <math|z\<leq\><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>>
+  and <math|z\<leq\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|min>><rsub|1> \<assign\> <text|<samp|and>><rsub|1>
+  :<2>\<times\><2>\<vdash\><2>>
+
+  <subsubsection|<samp|max> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'max'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|max>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|max>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>\<leq\>z>
+  if and only if <math|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>\<leq\>z>
+  and <math|<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>\<leq\>z>
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|max>><rsub|1> \<assign\> <text|<samp|or>><rsub|1>
+  :<2>\<times\><2>\<vdash\><2>>
+
+  <subsubsection|<samp|median> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'median'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|median>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|min>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x<rsub|i>,x<rsub|j>|\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>\<leq\><around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|median>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x<rsub|1>,<around*|\<langle\>|x<rsub|2>,x<rsub|3>|\<rangle\>>|\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>\<leq\><around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|max>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x<rsub|i>,x<rsub|j>|\<rangle\>>|\<rceil\>><rsub|2<rsup|n>>>
+  for all <math|1\<leq\>i\<less\>j\<leq\>3>.
+
+  \;
+
+  Aliases:
+
+  <math|<text|<samp|median>><rsub|1> \<assign\> <text|<samp|maj>><rsub|1>
+  :<2>\<times\><around*|(|<2>\<times\><2>|)>\<vdash\><2>>
+
+  \;
+
+  <subsubsection|<samp|div2n1n>>
+
+  (Note: helper function for <samp|divmod>. See <hlink|Fast recursive
+  division|http://cr.yp.to/bib/1998/burnikel.ps> by Bunikel and Ziegler
+  (1998).)
+
+  <math|<rep|<text|<samp|'div2n1n'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|div2n1n>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n+1>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  When <math|2<rsup|n-1>\<leq\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>
+  >and<math|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n+1>>\<less\>2<rsup|n>\<cdot\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>>,
+
+  <\enumerate-alpha>
+    <item><math|<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>\<cdot\><around*|\<lceil\>|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|div2n1n>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|2<rsup|n>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n+1>>-<around*|\<lceil\>|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|div2n1n>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|2<rsup|n>>>,
+    and
+
+    <item><math|<around*|\<lceil\>|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|div2n1n>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|2<rsup|n>>\<less\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>>.
+  </enumerate-alpha>
+
+  \;
+
+  When <math|2<rsup|n-1>\<gtr\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>
+  >or<math|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n+1>>\<geqslant\>2<rsup|n>\<cdot\><around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>>,
+  then <math|bit<rsub|2<rsup|2n>,i><around*|(|<around*|\<llbracket\>|<text|<samp|div2n1n>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>=1>.
+
+  \;
+
+  <subsubsection|<samp|div-mod> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'div-mod'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|div-mod>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>\<cdot\><around*|\<lceil\>|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|div-mod>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|2<rsup|n>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-<around*|\<lceil\>|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|div-mod>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|2<rsup|n>>>
+
+  \;
+
+  For all <math|r\<in\>\<bbb-N\>> such that
+  <math|<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>\|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-r>
+  we have<math|<around*|\<lceil\>|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|div-mod>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|)>|\<rceil\>><rsub|2<rsup|n>>\<leq\>r>.
+
+  <subsubsection|<samp|divide> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'divide'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|divide>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  <subsubsection|<samp|modulo> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'modulo'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|modulo>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  <subsubsection|<samp|divides> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'divides'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|divides>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>> for
+  <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<lceil\>|<around*|\<llbracket\>|<text|<samp|divides>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>|\<rceil\>><rsub|1>=\<chi\><around*|(|<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>\|<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>|)>>
+
+  <subsubsection|<samp|eea> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'eea'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|eea>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><around*|(|<around*|(|<around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>+<around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>|)>\<times\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>|)>\<times\><2><rsup|2<rsup|n>>>
+  for <math|0\<leq\>n>
+
+  \;
+
+  Properties:
+
+  Let <math|<around*|\<langle\>|<around*|\<langle\>|b,<around*|\<langle\>|c<rsub|y>,c<rsub|x>|\<rangle\>>|\<rangle\>>,d|\<rangle\>>\<assign\><around*|\<llbracket\>|<text|<samp|eea>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|x,y|\<rangle\>>>
+
+  \;
+
+  <math|<around*|\<lceil\>|c<rsub|x>|\<rceil\>><rsub|2<rsup|n>>*<around*|\<lceil\>|d|\<rceil\>><rsub|2<rsup|n>>=<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>>
+
+  <math|<around*|\<lceil\>|c<rsub|y>|\<rceil\>><rsub|2<rsup|n>>*<around*|\<lceil\>|d|\<rceil\>><rsub|2<rsup|n>>=<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>>
+
+  \;
+
+  If <math|<injl|<around*|\<langle\>|s,t|\<rangle\>>>=b> then
+  <math|<around*|\<lceil\>|s|\<rceil\>><rsub|2<rsup|n>>*<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-<around*|\<lceil\>|t|\<rceil\>><rsub|2<rsup|n>>*<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>=<around*|\<lceil\>|d|\<rceil\>><rsub|2<rsup|n>>>
+  and either <math|<around*|\<lceil\>|s|\<rceil\>><rsub|2<rsup|n>>*\<less\><frac|<around*|\<lceil\>|c<rsub|y>|\<rceil\>><rsub|2<rsup|n>>|2>>
+  or <math|<around*|\<lceil\>|t|\<rceil\>><rsub|2<rsup|n>>*\<less\><frac|<around*|\<lceil\>|c<rsub|x>|\<rceil\>><rsub|2<rsup|n>>|2>>.
+
+  If <math|<injr|<around*|\<langle\>|s,t|\<rangle\>>>=b> then
+  <math|<around*|\<lceil\>|s|\<rceil\>><rsub|2<rsup|n>>*<around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|n>>-<around*|\<lceil\>|t|\<rceil\>><rsub|2<rsup|n>>*<around*|\<lceil\>|y|\<rceil\>><rsub|2<rsup|n>>=-<around*|\<lceil\>|d|\<rceil\>><rsub|2<rsup|n>>>
+  and either <math|<around*|\<lceil\>|s|\<rceil\>><rsub|2<rsup|n>>*\<less\><frac|<around*|\<lceil\>|c<rsub|y>|\<rceil\>><rsub|2<rsup|n>>|2>>
+  or <math|<around*|\<lceil\>|t|\<rceil\>><rsub|2<rsup|n>>*\<less\><frac|<around*|\<lceil\>|c<rsub|x>|\<rceil\>><rsub|2<rsup|n>>|2>.>
+
+  \;
+
+  <math|<around*|\<llbracket\>|<text|<samp|eea>><rsub|2<rsup|n>>|\<rrbracket\>><around*|\<langle\>|<around*|\<lfloor\>|x|\<rfloor\>>,<around*|\<lfloor\>|x|\<rfloor\>>|\<rangle\>>=<around*|\<langle\>|<around*|\<langle\>|<injl|<around*|\<langle\>|<around*|\<lfloor\>|1|\<rfloor\>>,<around*|\<lfloor\>|0|\<rfloor\>>|\<rangle\>>>,<around*|\<langle\>|<around*|\<lfloor\>|1|\<rfloor\>>,<around*|\<lfloor\>|1|\<rfloor\>>|\<rangle\>>|\<rangle\>>,<around*|\<lfloor\>|x|\<rfloor\>>|\<rangle\>>>.
+
+  <subsubsection|<samp|bezout> (unsigned)>
+
+  (CAUTION: Not defined when <math|n\<leq\>1>.)
+
+  <math|<rep|<text|<samp|'bezout'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|bezout>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>+<around*|(|<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>|)>>
+  for <math|1\<leq\>n>
+
+  <subsubsection|<samp|gcd> (unsigned)>
+
+  (CAUTION: Not defined when <math|n\<leq\>1>.)
+
+  <math|<rep|<text|<samp|'gcd'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|gcd>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  <subsubsection|<samp|cofactors> (unsigned)>
+
+  (CAUTION: Not defined when <math|n\<leq\>1>.)
+
+  <math|<rep|<text|<samp|'cofactors'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|cofactors>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>>
+  for <math|1\<leq\>n>
+
+  <subsubsection|<samp|lcm> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'lcm'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|lcm>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n+1>>>
+  for <math|0\<leq\>n>
+
+  <subsubsection|<samp|jacobi> (unsigned)>
+
+  \;
+
+  <math|<rep|<text|<samp|'jacobi'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|jacobi>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2><rsup|2>> for
+  <math|0\<leq\>n>
+
+  <subsubsection|<samp|absolute-value> (signed input/unsigned output)>
+
+  \;
+
+  <math|<rep|<text|<samp|'absolute-value'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>>
+
+  <math|<text|<samp|absolute-value>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2<rsup|n>>> for <math|0\<leq\>n>
+
+  <subsubsection|<verbatim|><samp|sign>>
+
+  (CAUTION: Not defined when <math|n=0>. See Aliases.)
+
+  <\math>
+    <rep|<text|<samp|'sign'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n|>
+  </math>
+
+  <math|<text|<samp|sign>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<vdash\><2><rsup|2>> for <math|1\<leq\>n>
+
+  \;
+
+  Properties:
+
+  <math|<around*|\<llbracket\>|<text|<samp|sign>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>=<around*|\<langle\>|<around*|\<llbracket\>|<text|<samp|leftmost>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>,<around*|\<llbracket\>|<text|<samp|some>><rsub|2<rsup|n>>|\<rrbracket\>><around*|(|x|)>|\<rangle\>>>
+
+  <subsubsection|<samp|signed-le>>
+
+  \;
+
+  <math|<rep|<text|<samp|'signed-le'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|signed-le>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>> for
+  <math|0\<leq\>n>
+
+  <subsubsection|<samp|signed-lt>>
+
+  \;
+
+  <math|<rep|<text|<samp|'signed-lt'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|n+1|>>
+
+  <math|<text|<samp|signed-lt>><rsub|2<rsup|n>>
+  :<2><rsup|2<rsup|n>>\<times\><2><rsup|2<rsup|n>>\<vdash\><2>> for
+  <math|0\<leq\>n>
+
+  <subsubsection|<samp|signed-min>>
+
+  <subsubsection|<samp|signed-max>>
+
+  <subsubsection|<samp|signed-median>>
+
+  <subsubsection|<samp|signed-right-shift>>
+
+  Right shift by a signed amount with sign extension. Negative values are a
+  left shift.
+
+  <subsubsection|<samp|signed-divmod> (unsigned denominator)>
+
+  <subsubsection|<samp|signed-div> (unsigned denominator)>
+
+  <subsubsection|<samp|signed-signed-divmod> (signed denominator)>
+
+  <subsubsection|<samp|signed-signed-div> (signed denominator)>
+
+  \;
+
+  <subsection|<verbatim|110101...: >Jets for hash functions>
+
+  <subsubsection|<verbatim|1101010...: >Jets for SHA-2>
+
+  <paragraph|<samp|sha-256-block>>
+
+  \;
+
+  <math|<rep|<text|<samp|'sha-256-block'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>>
+
+  <math|<text|<samp|sha-256-block>> :<2><rsup|256>\<times\><2><rsup|512>\<vdash\><2><rsup|256>>
+
+  \;
+
+  <paragraph|<samp|sha-256-iv>>
+
+  \;
+
+  <math|<rep|<text|<samp|'sha-256-iv'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>>
+
+  <\math>
+    <text|<samp|sha-256-iv>> :<1>\<vdash\><2><rsup|256>
+  </math>
+
+  <subsubsection|<verbatim|110101100...: >Jets for SHA-3>
+
+  In this section we define <math|X<rsup|5>\<assign\>X\<times\>X<rsup|4>> and
+  <math|X<rsup|1600>\<assign\><around*|(|<around*|(|X<rsup|64>|)><rsup|5>|)><rsup|5>>.
+
+  \;
+
+  <paragraph|<samp|sha3-zero>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'sha3-zero'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|sha3-zero>> :<1>\<vdash\><2><rsup|1600>>
+
+  \;
+
+  <paragraph|<samp|sha3-absorb>>
+
+  (Note: we should proably byte-stwap the input before xoring it into place
+
+  <\math>
+    <rep|<text|<samp|'sha3-absorb'>><rsub|n,m>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>\<cdummy\><rep|n|>\<cdummy\><rep|m|>
+  </math>
+
+  <math|<text|<samp|sha3-absorb>><rsub|n,m>:<2><rsup|64>\<times\><2><rsup|1600>\<vdash\><2><rsup|1600>>
+  for <math|1\<leq\>n,m\<leq\>5>
+
+  \;
+
+  <paragraph|<samp|sha3-xor>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'sha3-xor'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|sha3-xor>> :<2><rsup|1600>\<times\><2><rsup|1600>\<vdash\><2><rsup|1600>>
+
+  \;
+
+  <paragraph|<samp|sha3-permute>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'sha3-permute'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|sha3-permute>>:<2><rsup|1600>\<vdash\><2><rsup|1600>>
+
+  \;
+
+  <paragraph|<samp|sha3-squeeze-256>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'sha3-squeeze-256'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|sha3-squeeze-256>>:<2><rsup|1600>\<vdash\><2><rsup|256>>
+
+  \;
+
+  <paragraph|<samp|sha3-squeeze-512>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'sha3-squeeze-512'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|sha3-squeeze-512>>:<2><rsup|1600>\<vdash\><2><rsup|512>>
+
+  <subsubsection|<verbatim|110101101...: >Jets for RIPEMD>
+
+  <subsubsection|<verbatim|110101110000...: >Jets for SHA-1 (RESERVED)>
+
+  <subsection|<verbatim|110110000...: >Jets for elliptic curve functions>
+
+  <subsubsection|<verbatim|1101100000...: >Jets for secp256k1>
+
+  In this section we define <math|Scalar\<assign\><2><rsup|256>>,
+  <math|Short\<assign\><2>\<times\><2><rsup|128>>,
+  <math|FE\<assign\><2><rsup|256>>, <math|GE\<assign\>FE\<times\>FE>, and
+  <math|GEJ\<assign\>GE\<times\>FE>.
+
+  (Note: To convert GE to GEJ pair with <samp|one>).
+
+  <with|color|red|TODO: Verify that all <em|equivalent> FE and Scalar inputs
+  yield <em|equal> outputs.>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-normalize>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-normalize'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-normalize>>:FE\<vdash\>FE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-negate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-negate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-negate>>:FE\<vdash\>FE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-add>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-negate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-negate>>:FE\<times\>FE\<vdash\>FE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-square>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-square'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-square>>:FE\<vdash\>FE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-multiply>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-multiply'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-multiply>>:FE\<times\>FE\<vdash\>FE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-multiply-beta>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-multiply-beta'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-multiply-beta>>:FE\<vdash\>FE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-invert>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-invert'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-invert>>:FE\<vdash\>FE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-square-root>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-square-root'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-square-root>>:FE\<vdash\><maybe><around*|(|FE|)>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-is-quad>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-is-quad'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-is-quad>>:FE\<vdash\><2>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-normalize>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-normalize'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-normalize>>:Scalar\<vdash\>Scalar>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-negate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-negate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|'secp256k1-scalar-negate'>>:Scalar\<vdash\>Scalar>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-add>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-add'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-add>>:Scalar\<times\>Scalar\<vdash\>Scalar>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-square>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-square'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-square>>:Scalar\<vdash\>Scalar>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-multiply>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-multiply'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-multiply>>:Scalar\<times\>Scalar\<vdash\>Scalar>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-multiply-lambda>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-multiply-lambda'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-multiply-lambda>>:Scalar\<vdash\>Scalar>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-invert>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-invert'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-invert>>:Scalar\<vdash\>Scalar>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-split>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-split'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-split>>:Scalar\<vdash\>Short\<times\>Short>
+
+  \;
+
+  <\with|color|red>
+    TODO Properties:
+
+    <math|\<lambda\>\<cdot\><around*|\<lceil\>|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|'secp256k1-scalar-split'>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|2<rsup|128>>+<around*|\<lceil\>|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|'secp256k1-scalar-split'>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|2<rsup|128>>\<equiv\><rsub|Scalar><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|256>>>
+  </with>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-infinity>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-infinity'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-infinity>>:<1>\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-normalize>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-normalize'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-normalize>>:GEJ\<vdash\>GE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-negate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-negate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-negate>>:GEJ\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-ge-negate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-ge-negate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-ge-negate>>:GE\<vdash\>GE>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-double>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-double'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-double>>:GEJ\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-add>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-add'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-add>>:GEJ\<times\>GEJ\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-ge-add-ex>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-ge-add-ex'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-ge-add-ex>>:GEJ\<times\>GE\<vdash\>FE\<times\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-ge-add>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-ge-add'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-ge-add>>:GEJ\<times\>GE\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-is-infinity>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-is-infinity'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-is-infinity>>:GEJ\<vdash\><2>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-equiv>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-equiv'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-equiv>>:GEJ\<times\>GEJ\<vdash\><2>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-gej-x-equiv>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-gej-x-equiv'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-gej-x-equiv>>:FE\<times\>GEJ\<vdash\><2>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-shamir>>
+
+  (Note: Support only recommened up to <math|2<rsup|n>\<leq\><with|color|red|TODO
+  8?>>.)
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-shamir'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|secp256k1-shamir>><rsub|2<rsup|n>>:Scalar\<times\><around*|(|Scalar\<times\>GEJ|)><rsup|2<rsup|n>>\<vdash\>GEJ>
+  for <math|0\<leq\>n>
+
+  <with|color|red|TODO Short version?>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scale>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scale'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scale>>:Scalar\<times\>GEJ\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scale-short>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scale-short'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scale-short>>:Short\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scale-lambda>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scale-lambda'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scale-lambda>>:GEJ\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-generate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-generate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-generate>>:Scalar\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-short-generate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-short-generate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-short-generate>>:Short\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-lambda-generate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-lambda-generate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-lambda-generate>>:Short\<vdash\>GEJ>
+
+  \;
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-wnaf5>>
+
+  <paragraph|<samp|secp256k1-scalar-wnaf16>>
+
+  <paragraph|<samp|secp256k1-short-wnaf5>>
+
+  <paragraph|<samp|secp256k1-short-wnaf16>>
+
+  <paragraph|<samp|secp256k1-odd-generate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-odd-generate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-odd-generate>>:<2><rsup|16>\<vdash\>GE>
+
+  \;
+
+  <subsection|<verbatim|110110001...: >Jets for digital signatures>
+
+  <subsubsection|<verbatim|1101100010...: >Jets for secp256k1 based digital
+  signatures>
+
+  In this section we define <math|Pubkey\<assign\><2><rsup|256>>,
+  <math|Point\<assign\><2>\<times\>Pubkey>,
+  <math|Signature\<assign\><2><rsup|512>>.
+
+  \;
+
+  <paragraph|<samp|bip0340-schnorr>>
+
+  (Note: this jet can fail.)
+
+  <\math>
+    <rep|<text|<samp|'bip0340-schnorr'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|bip0340-schnorr>>:<around*|(|Pubkey\<times\><2><rsup|256>|)>\<times\>Signature\<vdash\><1>>
+
+  \;
+
+  <paragraph|<samp|bip0340-challenge-iv>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'bip0340-challenge-iv'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|bip0340-challenge-iv>>:<1>\<vdash\><2><rsup|256>>
+
+  \;
+
+  <paragraph|<samp|bip0340-challenge-midstate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'bip0340-challenge-midstate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <\math>
+    <text|<samp|bip0340-challenge-midstate>>:FE\<times\>Pubkey\<vdash\><2><rsup|256>
+  </math>
+
+  \;
+
+  <paragraph|<samp|bip0340-schnorr-midstate>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'bip0340-schnorr-midstate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <\math>
+    <text|<samp|bip0340-schnorr-midstate>>:<around*|(|GE\<times\><2><rsup|256>|)>\<times\><around*|(|FE\<times\>Scalar|)>\<vdash\><1>
+  </math>
+
+  \;
+
+  <paragraph|<samp|secp256k1-unpack-point>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-unpack-point'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-unpack-point>>:Point\<vdash\><maybe><around*|(|GE|)>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-unpack-pubkey>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-unpack-pubkey'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-unpack-pubkey>>:Pubkey\<vdash\><maybe><around*|(|GE|)>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-unpack-signature>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-unpack-signtaure'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-unpack-signature>>:Pubkey\<vdash\><maybe><around*|(|FE\<times\>Scalar|)>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-ecdsa>>
+
+  \;
+
+  <subsection|<verbatim|110110010...: >Jets for Simplicity>
+
+  Tagged hash IVs for basic simplicity combinators, signature hashes, etc.
+  The CMR of various expressions for constants.
+
+  \;
+
+  These would be use for Simplicity covenants.
+
+  <subsubsection|<verbatim|11011000100...: >Jets for tagged hash IVs>
+
+  <paragraph|<samp|iden-commitment-tag>>
+
+  <paragraph|<samp|comp-commitment-tag>>
+
+  <paragraph|<samp|unit-commitment-tag>>
+
+  <paragraph|<samp|injl-commitment-tag>>
+
+  <paragraph|<samp|injr-commitment-tag>>
+
+  <paragraph|<samp|case-commitment-tag>>
+
+  <paragraph|<samp|pair-commitment-tag>>
+
+  <paragraph|<samp|take-commitment-tag>>
+
+  <paragraph|<samp|drop-commitment-tag>>
+
+  <paragraph|<samp|witness-commitment-tag>>
+
+  <paragraph|<samp|disconnect-commitment-tag>>
+
+  <paragraph|<samp|fail-commitment-tag>>
+
+  <paragraph|<samp|signtaure-tag>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'signature-tag'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|signature-tag>>:<1>\<vdash\><2><rsup|256>>
+
+  \;
+
+  <paragraph|<samp|sighash-tag>>
+
+  <subsection|<verbatim|110110011...: >Jets for Bitcoin (without primitives)>
+
+  This section is not recommended for non-Bitcoin(-like) applications.
+
+  \;
+
+  In this section we define <math|Height\<assign\><2><rsup|32>>,
+  <math|Time\<assign\><2><rsup|32>>, <math|Distance\<assign\><2><rsup|16>>,
+  and <math|Duration = <2><rsup|32>>.
+
+  <subsubsection|<samp|parse-lock>>
+
+  (Note: <math|<around*|\<llbracket\>|<text|<samp|'parse-lock'>>|\<rrbracket\>><around*|\<lfloor\>|0|\<rfloor\>><rsub|32>\<assign\><injl|<around*|(|0|)>>>)
+
+  <math|<rep|<text|<samp|'parse-lock'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|parse-lock>> :<2><rsup|32>\<vdash\>Height+Time>
+
+  <subsubsection|<samp|parse-sequence>>
+
+  \;
+
+  <math|<rep|<text|<samp|'parse-sequence'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|parse-sequence>> :<2><rsup|32>\<vdash\><maybe><around*|(|Distance+Duration|)>>
+
+  <subsection|<verbatim|1101101000...: >Jets for Elements (without
+  primitives)>
+
+  This section is not recommended for non-Elements applications.
+
+  <subsubsection|<samp|generate-entropy>>
+
+  \;
+
+  <math|<rep|<text|<samp|'generate-entropy'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|generate-entropy>> :Outpoint\<times\><2><rsup|256>\<vdash\><2><rsup|256>>
+
+  <subsubsection|<samp|calculate-asset>>
+
+  \;
+
+  <math|<rep|<text|<samp|'calculate-asset'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|calculate-asset>> :<2><rsup|256>\<vdash\>ExplicitAsset>
+
+  <subsubsection|<samp|calculate-token>>
+
+  \;
+
+  <math|<rep|<text|<samp|'calculate-token'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|calculate-token>> :<2>\<times\><2><rsup|256>\<vdash\>ExplicitAsset>
+
+  <section|<verbatim|111...: >Bitcoin Jets>
+
+  <subsection|Transaction>
+
+  <\itemize>
+    <item><math|<text|<samp|total-fee>>\<of\><1>\<vdash\>Value>
+  </itemize>
+
+  <subsection|Signature Hash Modes>
+
+  <\itemize>
+    <item><math|<text|<samp|sighash-all>>\<of\><1>\<vdash\><2><rsup|256>>
+
+    <item><math|<text|<samp|sighash-single>>\<of\><1>\<vdash\><2><rsup|256>>
+    (anyone can pay)
+
+    <item><math|<text|<samp|sighash-outputs>>\<of\>Index\<times\><2><rsup|32>\<vdash\><2><rsup|256>>
+    (anyone can pay)
+  </itemize>
+
+  <subsection|Time Locks>
+
+  In this section we define <math|Height\<assign\><2><rsup|32>>,
+  <math|Time\<assign\><2><rsup|32>>, <math|Distance\<assign\><2><rsup|16>>,
+  and <math|Duration = <2><rsup|32>>.
+
+  <subsubsection|<samp|total-height-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-height-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|<samp|total-height-lock>>>
+  :<1>\<vdash\><maybe><around*|(|Height|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|is-final> returns
+  <math|<math-tt|1><rsub|<2>>> and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|total-time-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-time-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|total-time-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Time|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|is-final> returns
+  <math|<math-tt|1><rsub|<2>>> and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|total-distance-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-distance-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|total-distance-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Distance|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> where <math|x> is the largest
+  among the <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  returned by <samp|input-distance-lock> on any inputs, if any such values
+  are returned.
+
+  <subsubsection|<samp|total-duration-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-duration-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|total-duration-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Duration|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> where <math|x> is the largest
+  among the <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  returned by <samp|input-duration-lock> on any inputs, if any such values
+  are returned.
+
+  <subsubsection|<samp|is-final>>
+
+  \;
+
+  <math|<rep|<text|<samp|'is-final'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|is-final>'>> :<1>\<vdash\><2>>
+
+  \;
+
+  Returns <math|<math-tt|1><rsub|<2>>> when <samp|input-is-final> returns
+  <math|\<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)>> for all inputs.
+
+  <subsubsection|<samp|current-height-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-height-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-height-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Height|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|current-is-final>
+  returns <math|<math-tt|1><rsub|<2>>> and
+  <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-time-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-time-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-time-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Time|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|current-is-final>
+  returns <math|<math-tt|1><rsub|<2>>> and
+  <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-distance-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-distance-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-distance-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Distance|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when
+  <math|<around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|currentSequence>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-duration-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-duration-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-duration-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Duration|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <math|<around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|currentSequence>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-is-Final>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-is-final'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-is-final>'>> :<1>\<vdash\><2>>
+
+  \;
+
+  Returns <math-tt|1><rsub|<2>> when <math|<around*|\<llbracket\>|<text|<samp|<math|currentSequence>>>|\<rrbracket\>>>
+  returns <math|<around*|\<lfloor\>|2<rsup|32>-1|\<rfloor\>>>.
+
+  <subsubsection|<samp|input-height-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-height-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-height-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Height|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <samp|input-is-final> returns <math|\<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)>>
+  and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-time-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-time-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-time-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Time|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <samp|input-is-final> returns <math|\<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)>>
+  and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-distance-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-distance-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-distance-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Distance|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <math|<maybe><around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|inputSequence>>|\<rrbracket\>>>
+  returns <math|\<eta\><rsup|S><around*|(|<injl|<around*|(|x|)>>|)>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-duration-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-duration-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-duration-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Duration|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <math|<maybe><around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|inputSequence>>|\<rrbracket\>>>
+  returns <math|\<eta\><rsup|S><around*|(|<injr|<around*|(|x|)>>|)>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-is-final>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-is-final'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-is-final>'>>
+  :Index\<vdash\><maybe><around*|(|<2>|)>>
+
+  \;
+
+  Returns \<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)> when
+  <math|<around*|\<llbracket\>|<text|<samp|<math|inputSequence>>>|\<rrbracket\>>>
+  returns \<eta\><rsup|S><around*|(|<math|<around*|\<lfloor\>|2<rsup|32>-1|\<rfloor\>>>|)>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <em|><section|<verbatim|111...: >Elements Jets>
+
+  <subsection|Transaction>
+
+  <\itemize>
+    <item><math|<text|<samp|'<samp|outputIsFee>'>>
+    :Index\<vdash\><maybe><around*|(|<2>|)>>
+  </itemize>
+
+  <\itemize>
+    <item><math|<samp|sigHashAll>\<of\><1>\<vdash\><2><rsup|256>>
+
+    <item><math|<samp|sigHashSingle>\<of\><1>\<vdash\><2><rsup|256>> (anyone
+    can pay)
+
+    <item><math|<samp|sigHashOutputs>\<of\>Index\<times\><2><rsup|32>\<vdash\><2><rsup|256>>
+    (anyone can pay)
+  </itemize>
+
+  <subsection|Time Locks>
+
+  In this section we define <math|Height\<assign\><2><rsup|32>>,
+  <math|Time\<assign\><2><rsup|32>>, <math|Distance\<assign\><2><rsup|16>>,
+  and <math|Duration = <2><rsup|32>>.
+
+  <subsubsection|<samp|total-height-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-height-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|total-height-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Height|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|is-final> returns
+  <math|<math-tt|1><rsub|<2>>> and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|total-time-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-time-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|total-time-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Time|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|is-final> returns
+  <math|<math-tt|1><rsub|<2>>> and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|total-distance-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-distance-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|total-distance-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Distance|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> where <math|x> is the largest
+  among the <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  returned by <samp|input-distance-lock> on any inputs, if any such values
+  are returned.
+
+  <subsubsection|<samp|total-duration-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'total-duration-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|total-duration-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Duration|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> where <math|x> is the largest
+  among the <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  returned by <samp|input-duration-lock> on any inputs, if any such values
+  are returned.
+
+  <subsubsection|<samp|is-final>>
+
+  \;
+
+  <math|<rep|<text|<samp|'is-final'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|is-final>'>> :<1>\<vdash\><2>>
+
+  \;
+
+  Returns <math|<math-tt|1><rsub|<2>>> when <samp|input-is-final> returns
+  <math|\<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)>> for all inputs.
+
+  <subsubsection|<samp|current-height-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-height-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-height-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Height|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|current-is-final>
+  returns <math|<math-tt|1><rsub|<2>>> and
+  <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-time-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-time-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-time-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Time|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when <samp|current-is-final>
+  returns <math|<math-tt|1><rsub|<2>>> and
+  <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-distance-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-distance-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-distance-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Distance|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|x|)>> when
+  <math|<around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|currentSequence>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-duration-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-duration-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-duration-lock>'>>
+  :<1>\<vdash\><maybe><around*|(|Duration|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <math|<around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|currentSequence>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  <subsubsection|<samp|current-is-Final>>
+
+  \;
+
+  <math|<rep|<text|<samp|'current-is-final'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|current-is-final>'>> :<1>\<vdash\><2>>
+
+  \;
+
+  Returns <math-tt|1><rsub|<2>> when <math|<around*|\<llbracket\>|<text|<samp|<math|currentSequence>>>|\<rrbracket\>>>
+  returns <math|<around*|\<lfloor\>|2<rsup|32>-1|\<rfloor\>>>.
+
+  <subsubsection|<samp|input-height-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-height-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-height-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Height|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <samp|input-is-final> returns <math|\<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)>>
+  and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injl|<around*|(|x|)>>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-time-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-time-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-time-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Time|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <samp|input-is-final> returns <math|\<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)>>
+  and <math|<around*|\<llbracket\>|<text|<samp|parse-lock>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|lockTime>>|\<rrbracket\>>>
+  returns <math|<injr|<around*|(|x|)>>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-distance-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-distance-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-distance-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Distance|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <math|<maybe><around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|inputSequence>>|\<rrbracket\>>>
+  returns <math|\<eta\><rsup|S><around*|(|<injl|<around*|(|x|)>>|)>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-duration-lock>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-duration-lock'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-duration-lock>'>>
+  :Index\<vdash\><maybe><around*|(|<maybe><around*|(|Duration|)>|)>>
+
+  \;
+
+  Returns <math|\<eta\><rsup|S><around*|(|\<eta\><rsup|S><around*|(|x|)>|)>>
+  when <math|<maybe><around*|\<llbracket\>|<text|<samp|parse-sequence>>|\<rrbracket\>>\<circ\><around*|\<llbracket\>|<text|<samp|inputSequence>>|\<rrbracket\>>>
+  returns <math|\<eta\><rsup|S><around*|(|<injr|<around*|(|x|)>>|)>>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsubsection|<samp|input-is-final>>
+
+  \;
+
+  <math|<rep|<text|<samp|'input-is-final'>>|>\<assign\><verbatim|<around*|[|111|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>>
+
+  <math|<text|<samp|'<samp|input-is-final>'>>
+  :Index\<vdash\><maybe><around*|(|<2>|)>>
+
+  \;
+
+  Returns \<eta\><rsup|S><around*|(|<math-tt|1><rsub|<2>>|)> when
+  <math|<around*|\<llbracket\>|<text|<samp|<math|inputSequence>>>|\<rrbracket\>>>
+  returns \<eta\><rsup|S><around*|(|<math|<around*|\<lfloor\>|2<rsup|32>-1|\<rfloor\>>>|)>.
+
+  Returns <math|\<emptyset\><rsup|<maybe>>> when the input index is out of
+  range.
+
+  <subsection|Issuance>
 
   Notes: use <samp|IssuanceContractHash> and <samp|IssuanceEntropy> to decide
   which issuance kind, if any, is being invoked.
 
-  <with|color|red|We also want jets for computing AssetIDs and TokenIDs from
-  entropy and probably also from contractHash.><appendix|Alternative
-  Serialization of Simplicity DAGs><label|app:AltSerialization>
+  <\itemize>
+    <item><math|<samp|currentIssuance>\<of\><value|1>\<vdash\><maybe><around*|(|<2>|)>><with|color|red|Either
+    a new issuance or reissuance or neither>
+
+    <item><math|<samp|currentIssuanceAsset>\<of\><value|1>\<vdash\><maybe><around*|(|ExplicitAsset|)>>
+
+    <item><math|<samp|currentIssuanceToken>\<of\><value|1>\<vdash\><maybe><around*|(|ExplicitAsset|)>>
+
+    <item><math|<samp|inputIssuance>\<of\>Index\<vdash\><maybe><around*|(|<maybe><around*|(|<2>|)>|)>>
+
+    <item><math|<samp|inputIssuanceAsset>\<of\>Index\<vdash\><maybe><around*|(|<maybe><around*|(|ExplicitAsset|)>|)>>
+
+    <item><math|<samp|inputIssuanceToken>\<of\>Index\<vdash\><maybe><around*|(|<maybe><around*|(|ExplicitAsset|)>|)>>
+
+    \;
+  </itemize>
+
+  <appendix|Alternative Serialization of Simplicity
+  DAGs><label|app:AltSerialization>
 
   <with|color|red|DEPRICATED>
 
@@ -7897,7 +10508,7 @@
     <associate|LC98|<tuple|6.2.2|?>>
     <associate|SS:Coq:MerkleRoots|<tuple|8.5|79>>
     <associate|Serialization|<tuple|2.8|?>>
-    <associate|app:AltSerialization|<tuple|B|107>>
+    <associate|app:AltSerialization|<tuple|C|107>>
     <associate|app:ElementsTransactions|<tuple|A|97>>
     <associate|auto-1|<tuple|1|7>>
     <associate|auto-10|<tuple|2.2|13>>
@@ -7984,32 +10595,234 @@
     <associate|auto-173|<tuple|A.1.1|104>>
     <associate|auto-174|<tuple|A.1.2|104>>
     <associate|auto-175|<tuple|A.1.3|107>>
-    <associate|auto-176|<tuple|A.2|109>>
-    <associate|auto-177|<tuple|B|?>>
-    <associate|auto-178|<tuple|B|?>>
+    <associate|auto-176|<tuple|B|109>>
+    <associate|auto-177|<tuple|B.1|?>>
+    <associate|auto-178|<tuple|B.1.1|?>>
+    <associate|auto-179|<tuple|B.1.1.1|?>>
     <associate|auto-18|<tuple|2.3.4.1|17>>
+    <associate|auto-180|<tuple|B.1.1.2|?>>
+    <associate|auto-181|<tuple|B.1.1.3|?>>
+    <associate|auto-182|<tuple|B.1.1.4|?>>
+    <associate|auto-183|<tuple|B.1.1.5|?>>
+    <associate|auto-184|<tuple|B.1.1.6|?>>
+    <associate|auto-185|<tuple|B.1.1.7|?>>
+    <associate|auto-186|<tuple|B.1.1.8|?>>
+    <associate|auto-187|<tuple|B.1.1.9|?>>
+    <associate|auto-188|<tuple|B.1.1.10|?>>
+    <associate|auto-189|<tuple|B.1.1.11|?>>
     <associate|auto-19|<tuple|2.4|17>>
+    <associate|auto-190|<tuple|B.1.1.12|?>>
+    <associate|auto-191|<tuple|B.1.1.13|?>>
+    <associate|auto-192|<tuple|B.1.1.14|?>>
+    <associate|auto-193|<tuple|B.1.1.15|?>>
+    <associate|auto-194|<tuple|B.1.1.16|?>>
+    <associate|auto-195|<tuple|B.1.1.17|?>>
+    <associate|auto-196|<tuple|B.1.1.18|?>>
+    <associate|auto-197|<tuple|B.1.1.19|?>>
+    <associate|auto-198|<tuple|B.1.1.20|?>>
+    <associate|auto-199|<tuple|B.1.1.21|?>>
     <associate|auto-2|<tuple|1.1|7>>
     <associate|auto-20|<tuple|2.4.1|18>>
+    <associate|auto-200|<tuple|B.1.1.22|?>>
+    <associate|auto-201|<tuple|B.1.1.23|?>>
+    <associate|auto-202|<tuple|B.1.1.24|?>>
+    <associate|auto-203|<tuple|B.1.1.25|?>>
+    <associate|auto-204|<tuple|B.1.1.26|?>>
+    <associate|auto-205|<tuple|B.1.1.27|?>>
+    <associate|auto-206|<tuple|B.1.1.28|?>>
+    <associate|auto-207|<tuple|B.1.1.29|?>>
+    <associate|auto-208|<tuple|B.1.2|?>>
+    <associate|auto-209|<tuple|B.1.2.1|?>>
     <associate|auto-21|<tuple|2.4.2|18>>
+    <associate|auto-210|<tuple|B.1.2.2|?>>
+    <associate|auto-211|<tuple|B.1.2.3|?>>
+    <associate|auto-212|<tuple|B.1.2.4|?>>
+    <associate|auto-213|<tuple|B.1.2.5|?>>
+    <associate|auto-214|<tuple|B.1.2.6|?>>
+    <associate|auto-215|<tuple|B.1.2.7|?>>
+    <associate|auto-216|<tuple|B.1.2.8|?>>
+    <associate|auto-217|<tuple|B.1.2.9|?>>
+    <associate|auto-218|<tuple|B.1.2.10|?>>
+    <associate|auto-219|<tuple|B.1.2.11|?>>
     <associate|auto-22|<tuple|3|19>>
+    <associate|auto-220|<tuple|B.1.2.12|?>>
+    <associate|auto-221|<tuple|B.1.2.13|?>>
+    <associate|auto-222|<tuple|B.1.2.14|?>>
+    <associate|auto-223|<tuple|B.1.2.15|?>>
+    <associate|auto-224|<tuple|B.1.2.16|?>>
+    <associate|auto-225|<tuple|B.1.2.17|?>>
+    <associate|auto-226|<tuple|B.1.2.18|?>>
+    <associate|auto-227|<tuple|B.1.2.19|?>>
+    <associate|auto-228|<tuple|B.1.2.20|?>>
+    <associate|auto-229|<tuple|B.1.2.21|?>>
     <associate|auto-23|<tuple|3.1|19>>
+    <associate|auto-230|<tuple|B.1.2.22|?>>
+    <associate|auto-231|<tuple|B.1.2.23|?>>
+    <associate|auto-232|<tuple|B.1.2.24|?>>
+    <associate|auto-233|<tuple|B.1.2.25|?>>
+    <associate|auto-234|<tuple|B.1.2.26|?>>
+    <associate|auto-235|<tuple|B.1.2.27|?>>
+    <associate|auto-236|<tuple|B.1.2.28|?>>
+    <associate|auto-237|<tuple|B.1.2.29|?>>
+    <associate|auto-238|<tuple|B.1.2.30|?>>
+    <associate|auto-239|<tuple|B.1.2.31|?>>
     <associate|auto-24|<tuple|3.1.1|19>>
+    <associate|auto-240|<tuple|B.1.2.32|?>>
+    <associate|auto-241|<tuple|B.1.2.33|?>>
+    <associate|auto-242|<tuple|B.1.2.34|?>>
+    <associate|auto-243|<tuple|B.1.2.35|?>>
+    <associate|auto-244|<tuple|B.1.2.36|?>>
+    <associate|auto-245|<tuple|B.1.2.37|?>>
+    <associate|auto-246|<tuple|B.1.2.38|?>>
+    <associate|auto-247|<tuple|B.1.2.39|?>>
+    <associate|auto-248|<tuple|B.1.2.40|?>>
+    <associate|auto-249|<tuple|B.1.2.41|?>>
     <associate|auto-25|<tuple|3.1.2|19>>
+    <associate|auto-250|<tuple|B.1.2.42|?>>
+    <associate|auto-251|<tuple|B.1.2.43|?>>
+    <associate|auto-252|<tuple|B.1.3|?>>
+    <associate|auto-253|<tuple|B.1.3.1|?>>
+    <associate|auto-254|<tuple|B.1.3.1.1|?>>
+    <associate|auto-255|<tuple|B.1.3.1.2|?>>
+    <associate|auto-256|<tuple|B.1.3.2|?>>
+    <associate|auto-257|<tuple|B.1.3.2.1|?>>
+    <associate|auto-258|<tuple|B.1.3.2.2|?>>
+    <associate|auto-259|<tuple|B.1.3.2.3|?>>
     <associate|auto-26|<tuple|3.1.3|19>>
+    <associate|auto-260|<tuple|B.1.3.2.4|?>>
+    <associate|auto-261|<tuple|B.1.3.2.5|?>>
+    <associate|auto-262|<tuple|B.1.3.2.6|?>>
+    <associate|auto-263|<tuple|B.1.3.3|?>>
+    <associate|auto-264|<tuple|B.1.3.4|?>>
+    <associate|auto-265|<tuple|B.1.4|?>>
+    <associate|auto-266|<tuple|B.1.4.1|?>>
+    <associate|auto-267|<tuple|B.1.4.1.1|?>>
+    <associate|auto-268|<tuple|B.1.4.1.2|?>>
+    <associate|auto-269|<tuple|B.1.4.1.3|?>>
     <associate|auto-27|<tuple|3.2|20>>
+    <associate|auto-270|<tuple|B.1.4.1.4|?>>
+    <associate|auto-271|<tuple|B.1.4.1.5|?>>
+    <associate|auto-272|<tuple|B.1.4.1.6|?>>
+    <associate|auto-273|<tuple|B.1.4.1.7|?>>
+    <associate|auto-274|<tuple|B.1.4.1.8|?>>
+    <associate|auto-275|<tuple|B.1.4.1.9|?>>
+    <associate|auto-276|<tuple|B.1.4.1.10|?>>
+    <associate|auto-277|<tuple|B.1.4.1.11|?>>
+    <associate|auto-278|<tuple|B.1.4.1.12|?>>
+    <associate|auto-279|<tuple|B.1.4.1.13|?>>
     <associate|auto-28|<tuple|3.2.1|20>>
+    <associate|auto-280|<tuple|B.1.4.1.14|?>>
+    <associate|auto-281|<tuple|B.1.4.1.15|?>>
+    <associate|auto-282|<tuple|B.1.4.1.16|?>>
+    <associate|auto-283|<tuple|B.1.4.1.17|?>>
+    <associate|auto-284|<tuple|B.1.4.1.18|?>>
+    <associate|auto-285|<tuple|B.1.4.1.19|?>>
+    <associate|auto-286|<tuple|B.1.4.1.20|?>>
+    <associate|auto-287|<tuple|B.1.4.1.21|?>>
+    <associate|auto-288|<tuple|B.1.4.1.22|?>>
+    <associate|auto-289|<tuple|B.1.4.1.23|?>>
     <associate|auto-29|<tuple|3.2.2|20>>
+    <associate|auto-290|<tuple|B.1.4.1.24|?>>
+    <associate|auto-291|<tuple|B.1.4.1.25|?>>
+    <associate|auto-292|<tuple|B.1.4.1.26|?>>
+    <associate|auto-293|<tuple|B.1.4.1.27|?>>
+    <associate|auto-294|<tuple|B.1.4.1.28|?>>
+    <associate|auto-295|<tuple|B.1.4.1.29|?>>
+    <associate|auto-296|<tuple|B.1.4.1.30|?>>
+    <associate|auto-297|<tuple|B.1.4.1.31|?>>
+    <associate|auto-298|<tuple|B.1.4.1.32|?>>
+    <associate|auto-299|<tuple|B.1.4.1.33|?>>
     <associate|auto-3|<tuple|1.2|8>>
     <associate|auto-30|<tuple|3.2.3|20>>
+    <associate|auto-300|<tuple|B.1.4.1.34|?>>
+    <associate|auto-301|<tuple|B.1.4.1.35|?>>
+    <associate|auto-302|<tuple|B.1.4.1.36|?>>
+    <associate|auto-303|<tuple|B.1.4.1.37|?>>
+    <associate|auto-304|<tuple|B.1.4.1.38|?>>
+    <associate|auto-305|<tuple|B.1.4.1.39|?>>
+    <associate|auto-306|<tuple|B.1.4.1.40|?>>
+    <associate|auto-307|<tuple|B.1.5|?>>
+    <associate|auto-308|<tuple|B.1.5.1|?>>
+    <associate|auto-309|<tuple|B.1.5.1.1|?>>
     <associate|auto-31|<tuple|3.2.4|21>>
+    <associate|auto-310|<tuple|B.1.5.1.2|?>>
+    <associate|auto-311|<tuple|B.1.5.1.3|?>>
+    <associate|auto-312|<tuple|B.1.5.1.4|?>>
+    <associate|auto-313|<tuple|B.1.5.1.5|?>>
+    <associate|auto-314|<tuple|B.1.5.1.6|?>>
+    <associate|auto-315|<tuple|B.1.5.1.7|?>>
+    <associate|auto-316|<tuple|B.1.5.1.8|?>>
+    <associate|auto-317|<tuple|B.1.6|?>>
+    <associate|auto-318|<tuple|B.1.6.1|?>>
+    <associate|auto-319|<tuple|B.1.6.1.1|?>>
     <associate|auto-32|<tuple|3.2.5|21>>
+    <associate|auto-320|<tuple|B.1.6.1.2|?>>
+    <associate|auto-321|<tuple|B.1.6.1.3|?>>
+    <associate|auto-322|<tuple|B.1.6.1.4|?>>
+    <associate|auto-323|<tuple|B.1.6.1.5|?>>
+    <associate|auto-324|<tuple|B.1.6.1.6|?>>
+    <associate|auto-325|<tuple|B.1.6.1.7|?>>
+    <associate|auto-326|<tuple|B.1.6.1.8|?>>
+    <associate|auto-327|<tuple|B.1.6.1.9|?>>
+    <associate|auto-328|<tuple|B.1.6.1.10|?>>
+    <associate|auto-329|<tuple|B.1.6.1.11|?>>
     <associate|auto-33|<tuple|3.2.6|21>>
+    <associate|auto-330|<tuple|B.1.6.1.12|?>>
+    <associate|auto-331|<tuple|B.1.6.1.13|?>>
+    <associate|auto-332|<tuple|B.1.6.1.14|?>>
+    <associate|auto-333|<tuple|B.1.7|?>>
+    <associate|auto-334|<tuple|B.1.7.1|?>>
+    <associate|auto-335|<tuple|B.1.7.2|?>>
+    <associate|auto-336|<tuple|B.1.8|?>>
+    <associate|auto-337|<tuple|B.1.8.1|?>>
+    <associate|auto-338|<tuple|B.1.8.2|?>>
+    <associate|auto-339|<tuple|B.1.8.3|?>>
     <associate|auto-34|<tuple|3.2.7|21>>
+    <associate|auto-340|<tuple|B.2|?>>
+    <associate|auto-341|<tuple|B.2.1|?>>
+    <associate|auto-342|<tuple|B.2.2|?>>
+    <associate|auto-343|<tuple|B.2.3|?>>
+    <associate|auto-344|<tuple|B.2.3.1|?>>
+    <associate|auto-345|<tuple|B.2.3.2|?>>
+    <associate|auto-346|<tuple|B.2.3.3|?>>
+    <associate|auto-347|<tuple|B.2.3.4|?>>
+    <associate|auto-348|<tuple|B.2.3.5|?>>
+    <associate|auto-349|<tuple|B.2.3.6|?>>
     <associate|auto-35|<tuple|3.2.8|21>>
+    <associate|auto-350|<tuple|B.2.3.7|?>>
+    <associate|auto-351|<tuple|B.2.3.8|?>>
+    <associate|auto-352|<tuple|B.2.3.9|?>>
+    <associate|auto-353|<tuple|B.2.3.10|?>>
+    <associate|auto-354|<tuple|B.2.3.11|?>>
+    <associate|auto-355|<tuple|B.2.3.12|?>>
+    <associate|auto-356|<tuple|B.2.3.13|?>>
+    <associate|auto-357|<tuple|B.2.3.14|?>>
+    <associate|auto-358|<tuple|B.2.3.15|?>>
+    <associate|auto-359|<tuple|B.3|?>>
     <associate|auto-36|<tuple|3.2.9|21>>
+    <associate|auto-360|<tuple|B.3.1|?>>
+    <associate|auto-361|<tuple|B.3.2|?>>
+    <associate|auto-362|<tuple|B.3.2.1|?>>
+    <associate|auto-363|<tuple|B.3.2.2|?>>
+    <associate|auto-364|<tuple|B.3.2.3|?>>
+    <associate|auto-365|<tuple|B.3.2.4|?>>
+    <associate|auto-366|<tuple|B.3.2.5|?>>
+    <associate|auto-367|<tuple|B.3.2.6|?>>
+    <associate|auto-368|<tuple|B.3.2.7|?>>
+    <associate|auto-369|<tuple|B.3.2.8|?>>
     <associate|auto-37|<tuple|3.2.10|22>>
+    <associate|auto-370|<tuple|B.3.2.9|?>>
+    <associate|auto-371|<tuple|B.3.2.10|?>>
+    <associate|auto-372|<tuple|B.3.2.11|?>>
+    <associate|auto-373|<tuple|B.3.2.12|?>>
+    <associate|auto-374|<tuple|B.3.2.13|?>>
+    <associate|auto-375|<tuple|B.3.2.14|?>>
+    <associate|auto-376|<tuple|B.3.2.15|?>>
+    <associate|auto-377|<tuple|B.3.3|?>>
+    <associate|auto-378|<tuple|C|?>>
+    <associate|auto-379|<tuple|C|?>>
     <associate|auto-38|<tuple|3.2.11|22>>
+    <associate|auto-380|<tuple|C|?>>
     <associate|auto-39|<tuple|3.3|22>>
     <associate|auto-4|<tuple|1.2.1|8>>
     <associate|auto-40|<tuple|3.3.1|23>>
@@ -8143,7 +10956,7 @@
     <associate|ss:salted|<tuple|4.3.2.2|46>>
     <associate|ss:typeInference|<tuple|7.1.1|65>>
     <associate|ss:unboundedLoop|<tuple|6.2|59>>
-    <associate|thm:CSCT|<tuple|3.3|31>>
+    <associate|thm:CSCT|<tuple|3.4|31>>
     <associate|v:checkSigHashAll|<tuple|8.6.6|?>>
   </collection>
 </references>
@@ -8787,97 +11600,917 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-153>>
 
+      <with|par-left|<quote|2tab>|9.1.7.3<space|2spc>Fast Evaluation with FFI
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-154>>
+
       9.2<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|Simplicity-Indef>
       library <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-154>
+      <no-break><pageref|auto-155>
 
       <with|par-left|<quote|1tab>|9.2.1<space|2spc>Primitive Signature
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-155>>
+      <no-break><pageref|auto-156>>
 
       <with|par-left|<quote|1tab>|9.2.2<space|2spc>Primitive Terms
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-156>>
-
-      <with|par-left|<quote|1tab>|9.2.3<space|2spc>Denotational Semantics of
-      Full Simplicity <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-157>>
 
-      <with|par-left|<quote|1tab>|9.2.4<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|JetType>
+      <with|par-left|<quote|1tab>|9.2.3<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|JetType>
       class <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-158>>
 
-      <with|par-left|<quote|1tab>|9.2.5<space|2spc>Type Inference
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|9.2.4<space|2spc>Denotational Semantics of
+      Full Simplicity <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-159>>
 
-      <with|par-left|<quote|1tab>|9.2.6<space|2spc>Serialization
+      <with|par-left|<quote|1tab>|9.2.5<space|2spc>Type Inference
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-160>>
 
+      <with|par-left|<quote|1tab>|9.2.6<space|2spc>Serialization
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-161>>
+
       <with|par-left|<quote|2tab>|9.2.6.1<space|2spc>Free Monadic
       Deserializaiton <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-161>>
+      <no-break><pageref|auto-162>>
 
       <with|par-left|<quote|2tab>|9.2.6.2<space|2spc>Serialization of
       Simplicity DAGs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-162>>
+      <no-break><pageref|auto-163>>
+
+      <with|par-left|<quote|1tab>|9.2.7<space|2spc>Jet Substitution
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-164>>
 
       9.3<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|Simplicity-Bitcoin>
       Libary <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-163>
+      <no-break><pageref|auto-165>
 
       9.4<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|Simplicity>
       Library <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-164>
+      <no-break><pageref|auto-166>
 
       <with|par-left|<quote|1tab>|9.4.1<space|2spc>CheckSigHashAll
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-165>>
+      <no-break><pageref|auto-167>>
 
       <with|par-left|<quote|1tab>|9.4.2<space|2spc>Known Discounted Jets
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-166>>
+      <no-break><pageref|auto-168>>
 
       9.5<space|2spc>Simplicity <with|font-family|<quote|tt>|language|<quote|verbatim>|testsuite>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-167>
+      <no-break><pageref|auto-169>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>C
       Library Guide> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-168><vspace|0.5fn>
+      <no-break><pageref|auto-170><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
       A<space|2spc>Elements Application> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-169><vspace|0.5fn>
+      <no-break><pageref|auto-171><vspace|0.5fn>
 
       A.1<space|2spc>Denotational Semantics
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-170>
+      <no-break><pageref|auto-172>
 
       <with|par-left|<quote|1tab>|A.1.1<space|2spc>Null Data
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-171>>
+      <no-break><pageref|auto-173>>
 
       <with|par-left|<quote|1tab>|A.1.2<space|2spc>Merkle Roots
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-172>>
+      <no-break><pageref|auto-174>>
 
       <with|par-left|<quote|1tab>|A.1.3<space|2spc>Serialization
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-173>>
-
-      A.2<space|2spc>Jets <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-174>
+      <no-break><pageref|auto-175>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
-      B<space|2spc>Alternative Serialization of Simplicity DAGs>
+      B<space|2spc>Catelogue of Jets> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-176><vspace|0.5fn>
+
+      B.1<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110...:
+      >Core Jets <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-177>
+
+      <with|par-left|<quote|1tab>|B.1.1<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|1100...:
+      >Jets for multi-bit logic <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-178>>
+
+      <with|par-left|<quote|2tab>|B.1.1.1<space|2spc><with|font-family|<quote|ss>|low>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-175><vspace|0.5fn>
+      <no-break><pageref|auto-179>>
+
+      <with|par-left|<quote|2tab>|B.1.1.2<space|2spc><with|font-family|<quote|ss>|high>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-180>>
+
+      <with|par-left|<quote|2tab>|B.1.1.3<space|2spc><with|font-family|<quote|ss>|first>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-181>>
+
+      <with|par-left|<quote|2tab>|B.1.1.4<space|2spc><with|font-family|<quote|ss>|last>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-182>>
+
+      <with|par-left|<quote|2tab>|B.1.1.5<space|2spc><with|font-family|<quote|ss>|complement>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-183>>
+
+      <with|par-left|<quote|2tab>|B.1.1.6<space|2spc><with|font-family|<quote|ss>|and>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-184>>
+
+      <with|par-left|<quote|2tab>|B.1.1.7<space|2spc><with|font-family|<quote|ss>|or>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-185>>
+
+      <with|par-left|<quote|2tab>|B.1.1.8<space|2spc><with|font-family|<quote|ss>|xor>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-186>>
+
+      <with|par-left|<quote|2tab>|B.1.1.9<space|2spc><with|font-family|<quote|ss>|maj>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-187>>
+
+      <with|par-left|<quote|2tab>|B.1.1.10<space|2spc><with|font-family|<quote|ss>|xor3>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-188>>
+
+      <with|par-left|<quote|2tab>|B.1.1.11<space|2spc><with|font-family|<quote|ss>|ch>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-189>>
+
+      <with|par-left|<quote|2tab>|B.1.1.12<space|2spc><with|font-family|<quote|ss>|some>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-190>>
+
+      <with|par-left|<quote|2tab>|B.1.1.13<space|2spc><with|font-family|<quote|ss>|all>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-191>>
+
+      <with|par-left|<quote|2tab>|B.1.1.14<space|2spc><with|font-family|<quote|ss>|eq>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-192>>
+
+      <with|par-left|<quote|2tab>|B.1.1.15<space|2spc><with|font-family|<quote|ss>|full-left-shift>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-193>>
+
+      <with|par-left|<quote|2tab>|B.1.1.16<space|2spc><with|font-family|<quote|ss>|full-right-shift>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-194>>
+
+      <with|par-left|<quote|2tab>|B.1.1.17<space|2spc><with|font-family|<quote|ss>|leftmost>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-195>>
+
+      <with|par-left|<quote|2tab>|B.1.1.18<space|2spc><with|font-family|<quote|ss>|rightmost>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-196>>
+
+      <with|par-left|<quote|2tab>|B.1.1.19<space|2spc><with|font-family|<quote|ss>|left-pad-low>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-197>>
+
+      <with|par-left|<quote|2tab>|B.1.1.20<space|2spc><with|font-family|<quote|ss>|left-pad-high>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-198>>
+
+      <with|par-left|<quote|2tab>|B.1.1.21<space|2spc><with|font-family|<quote|ss>|left-extend>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-199>>
+
+      <with|par-left|<quote|2tab>|B.1.1.22<space|2spc><with|font-family|<quote|ss>|right-pad-low>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-200>>
+
+      <with|par-left|<quote|2tab>|B.1.1.23<space|2spc><with|font-family|<quote|ss>|right-pad-high>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-201>>
+
+      <with|par-left|<quote|2tab>|B.1.1.24<space|2spc><with|font-family|<quote|ss>|right-extend>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-202>>
+
+      <with|par-left|<quote|2tab>|B.1.1.25<space|2spc><with|font-family|<quote|ss>|right-shift-with>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-203>>
+
+      <with|par-left|<quote|2tab>|B.1.1.26<space|2spc><with|font-family|<quote|ss>|right-shift>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-204>>
+
+      <with|par-left|<quote|2tab>|B.1.1.27<space|2spc><with|font-family|<quote|ss>|right-rotate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-205>>
+
+      <with|par-left|<quote|2tab>|B.1.1.28<space|2spc><with|font-family|<quote|ss>|transpose>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-206>>
+
+      <with|par-left|<quote|2tab>|B.1.1.29<space|2spc><with|font-family|<quote|ss>|find-first-high>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-207>>
+
+      <with|par-left|<quote|2tab>|B.1.1.30<space|2spc><with|font-family|<quote|ss>|find-last-high>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-208>>
+
+      <with|par-left|<quote|2tab>|B.1.1.31<space|2spc><with|font-family|<quote|ss>|bit>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-209>>
+
+      <with|par-left|<quote|1tab>|B.1.2<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110100...:
+      >Jets for arithmetic <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-210>>
+
+      <with|par-left|<quote|2tab>|B.1.2.1<space|2spc><with|font-family|<quote|ss>|full-add>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-211>>
+
+      <with|par-left|<quote|2tab>|B.1.2.2<space|2spc><with|font-family|<quote|ss>|add>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-212>>
+
+      <with|par-left|<quote|2tab>|B.1.2.3<space|2spc><with|font-family|<quote|ss>|full-increment>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-213>>
+
+      <with|par-left|<quote|2tab>|B.1.2.4<space|2spc><with|font-family|<quote|ss>|increment>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-214>>
+
+      <with|par-left|<quote|2tab>|B.1.2.5<space|2spc><with|font-family|<quote|ss>|popcount>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-215>>
+
+      <with|par-left|<quote|2tab>|B.1.2.6<space|2spc><with|font-family|<quote|ss>|full-subtract>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-216>>
+
+      <with|par-left|<quote|2tab>|B.1.2.7<space|2spc><with|font-family|<quote|ss>|subtract>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-217>>
+
+      <with|par-left|<quote|2tab>|B.1.2.8<space|2spc><with|font-family|<quote|ss>|negate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-218>>
+
+      <with|par-left|<quote|2tab>|B.1.2.9<space|2spc><with|font-family|<quote|ss>|full-decrement>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-219>>
+
+      <with|par-left|<quote|2tab>|B.1.2.10<space|2spc><with|font-family|<quote|ss>|decrement>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-220>>
+
+      <with|par-left|<quote|2tab>|B.1.2.11<space|2spc><with|font-family|<quote|ss>|full-multiply>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-221>>
+
+      <with|par-left|<quote|2tab>|B.1.2.12<space|2spc><with|font-family|<quote|ss>|multiply>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-222>>
+
+      <with|par-left|<quote|2tab>|B.1.2.13<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|><with|font-family|<quote|ss>|is-zero>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-223>>
+
+      <with|par-left|<quote|2tab>|B.1.2.14<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|><with|font-family|<quote|ss>|is-one>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-224>>
+
+      <with|par-left|<quote|2tab>|B.1.2.15<space|2spc><with|font-family|<quote|ss>|le>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-225>>
+
+      <with|par-left|<quote|2tab>|B.1.2.16<space|2spc><with|font-family|<quote|ss>|lt>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-226>>
+
+      <with|par-left|<quote|2tab>|B.1.2.17<space|2spc><with|font-family|<quote|ss>|min>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-227>>
+
+      <with|par-left|<quote|2tab>|B.1.2.18<space|2spc><with|font-family|<quote|ss>|max>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-228>>
+
+      <with|par-left|<quote|2tab>|B.1.2.19<space|2spc><with|font-family|<quote|ss>|median>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-229>>
+
+      <with|par-left|<quote|2tab>|B.1.2.20<space|2spc><with|font-family|<quote|ss>|div2n1n>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-230>>
+
+      <with|par-left|<quote|2tab>|B.1.2.21<space|2spc><with|font-family|<quote|ss>|div-mod>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-231>>
+
+      <with|par-left|<quote|2tab>|B.1.2.22<space|2spc><with|font-family|<quote|ss>|divide>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-232>>
+
+      <with|par-left|<quote|2tab>|B.1.2.23<space|2spc><with|font-family|<quote|ss>|modulo>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-233>>
+
+      <with|par-left|<quote|2tab>|B.1.2.24<space|2spc><with|font-family|<quote|ss>|divides>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-234>>
+
+      <with|par-left|<quote|2tab>|B.1.2.25<space|2spc><with|font-family|<quote|ss>|eea>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-235>>
+
+      <with|par-left|<quote|2tab>|B.1.2.26<space|2spc><with|font-family|<quote|ss>|bezout>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-236>>
+
+      <with|par-left|<quote|2tab>|B.1.2.27<space|2spc><with|font-family|<quote|ss>|gcd>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-237>>
+
+      <with|par-left|<quote|2tab>|B.1.2.28<space|2spc><with|font-family|<quote|ss>|cofactors>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-238>>
+
+      <with|par-left|<quote|2tab>|B.1.2.29<space|2spc><with|font-family|<quote|ss>|lcm>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-239>>
+
+      <with|par-left|<quote|2tab>|B.1.2.30<space|2spc><with|font-family|<quote|ss>|jacobi>
+      (unsigned) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-240>>
+
+      <with|par-left|<quote|2tab>|B.1.2.31<space|2spc><with|font-family|<quote|ss>|absolute-value>
+      (signed input/unsigned output) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-241>>
+
+      <with|par-left|<quote|2tab>|B.1.2.32<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|><with|font-family|<quote|ss>|sign>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-242>>
+
+      <with|par-left|<quote|2tab>|B.1.2.33<space|2spc><with|font-family|<quote|ss>|signed-le>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-243>>
+
+      <with|par-left|<quote|2tab>|B.1.2.34<space|2spc><with|font-family|<quote|ss>|signed-lt>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-244>>
+
+      <with|par-left|<quote|2tab>|B.1.2.35<space|2spc><with|font-family|<quote|ss>|signed-min>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-245>>
+
+      <with|par-left|<quote|2tab>|B.1.2.36<space|2spc><with|font-family|<quote|ss>|signed-max>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-246>>
+
+      <with|par-left|<quote|2tab>|B.1.2.37<space|2spc><with|font-family|<quote|ss>|signed-median>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-247>>
+
+      <with|par-left|<quote|2tab>|B.1.2.38<space|2spc><with|font-family|<quote|ss>|signed-right-shift>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-248>>
+
+      <with|par-left|<quote|2tab>|B.1.2.39<space|2spc><with|font-family|<quote|ss>|signed-divmod>
+      (unsigned denominator) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-249>>
+
+      <with|par-left|<quote|2tab>|B.1.2.40<space|2spc><with|font-family|<quote|ss>|signed-div>
+      (unsigned denominator) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-250>>
+
+      <with|par-left|<quote|2tab>|B.1.2.41<space|2spc><with|font-family|<quote|ss>|signed-signed-divmod>
+      (signed denominator) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-251>>
+
+      <with|par-left|<quote|2tab>|B.1.2.42<space|2spc><with|font-family|<quote|ss>|signed-signed-div>
+      (signed denominator) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-252>>
+
+      <with|par-left|<quote|1tab>|B.1.3<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110101...:
+      >Jets for hash functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-253>>
+
+      <with|par-left|<quote|2tab>|B.1.3.1<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|1101010...:
+      >Jets for SHA-2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-254>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha-256-block>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-255><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha-256-iv>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-256><vspace|0.15fn>>
+
+      <with|par-left|<quote|2tab>|B.1.3.2<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110101100...:
+      >Jets for SHA-3 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-257>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha3-zero>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-258><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha3-absorb>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-259><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha3-xor>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-260><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha3-permute>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-261><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha3-squeeze-256>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-262><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sha3-squeeze-512>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-263><vspace|0.15fn>>
+
+      <with|par-left|<quote|2tab>|B.1.3.3<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110101101...:
+      >Jets for RIPEMD <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-264>>
+
+      <with|par-left|<quote|2tab>|B.1.3.4<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110101110000...:
+      >Jets for SHA-1 (RESERVED) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-265>>
+
+      <with|par-left|<quote|1tab>|B.1.4<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110110000...:
+      >Jets for elliptic curve functions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-266>>
+
+      <with|par-left|<quote|2tab>|B.1.4.1<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|1101100000...:
+      >Jets for secp256k1 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-267>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-normalize>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-268><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-negate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-269><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-add>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-270><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-square>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-271><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-multiply>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-272><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-multiply-beta>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-273><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-invert>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-274><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-square-root>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-275><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-fe-is-quad>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-276><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-normalize>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-277><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-negate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-278><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-add>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-279><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-square>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-280><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-multiply>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-281><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-multiply-lambda>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-282><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-invert>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-283><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-split>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-284><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-infinity>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-285><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-normalize>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-286><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-negate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-287><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-ge-negate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-288><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-double>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-289><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-add>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-290><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-ge-add-ex>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-291><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-ge-add>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-292><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-is-infinity>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-293><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-equiv>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-294><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-gej-x-equiv>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-295><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-shamir>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-296><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scale>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-297><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scale-short>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-298><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scale-lambda>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-299><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-generate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-300><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-short-generate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-301><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-lambda-generate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-302><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-wnaf5>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-303><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-scalar-wnaf16>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-304><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-short-wnaf5>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-305><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-short-wnaf16>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-306><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-odd-generate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-307><vspace|0.15fn>>
+
+      <with|par-left|<quote|1tab>|B.1.5<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110110001...:
+      >Jets for digital signatures <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-308>>
+
+      <with|par-left|<quote|2tab>|B.1.5.1<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|1101100010...:
+      >Jets for secp256k1 based digital signatures
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-309>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|bip0340-schnorr>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-310><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|bip0340-challenge-iv>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-311><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|bip0340-challenge-midstate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-312><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|bip0340-schnorr-midstate>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-313><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-unpack-point>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-314><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-unpack-pubkey>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-315><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-unpack-signature>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-316><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|secp256k1-ecdsa>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-317><vspace|0.15fn>>
+
+      <with|par-left|<quote|1tab>|B.1.6<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110110010...:
+      >Jets for Simplicity <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-318>>
+
+      <with|par-left|<quote|2tab>|B.1.6.1<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|11011000100...:
+      >Jets for tagged hash IVs <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-319>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|iden-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-320><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|comp-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-321><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|unit-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-322><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|injl-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-323><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|injr-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-324><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|case-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-325><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|pair-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-326><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|take-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-327><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|drop-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-328><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|witness-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-329><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|disconnect-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-330><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|fail-commitment-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-331><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|signtaure-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-332><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|<with|font-family|<quote|ss>|sighash-tag>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-333><vspace|0.15fn>>
+
+      <with|par-left|<quote|1tab>|B.1.7<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|110110011...:
+      >Jets for Bitcoin (without primitives)
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-334>>
+
+      <with|par-left|<quote|2tab>|B.1.7.1<space|2spc><with|font-family|<quote|ss>|parse-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-335>>
+
+      <with|par-left|<quote|2tab>|B.1.7.2<space|2spc><with|font-family|<quote|ss>|parse-sequence>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-336>>
+
+      <with|par-left|<quote|1tab>|B.1.8<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|1101101000...:
+      >Jets for Elements (without primitives)
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-337>>
+
+      <with|par-left|<quote|2tab>|B.1.8.1<space|2spc><with|font-family|<quote|ss>|generate-entropy>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-338>>
+
+      <with|par-left|<quote|2tab>|B.1.8.2<space|2spc><with|font-family|<quote|ss>|calculate-asset>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-339>>
+
+      <with|par-left|<quote|2tab>|B.1.8.3<space|2spc><with|font-family|<quote|ss>|calculate-token>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-340>>
+
+      B.2<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|111...:
+      >Bitcoin Jets <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-341>
+
+      <with|par-left|<quote|1tab>|B.2.1<space|2spc>Transaction
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-342>>
+
+      <with|par-left|<quote|1tab>|B.2.2<space|2spc>Signature Hash Modes
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-343>>
+
+      <with|par-left|<quote|1tab>|B.2.3<space|2spc>Time Locks
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-344>>
+
+      <with|par-left|<quote|2tab>|B.2.3.1<space|2spc><with|font-family|<quote|ss>|total-height-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-345>>
+
+      <with|par-left|<quote|2tab>|B.2.3.2<space|2spc><with|font-family|<quote|ss>|total-time-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-346>>
+
+      <with|par-left|<quote|2tab>|B.2.3.3<space|2spc><with|font-family|<quote|ss>|total-distance-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-347>>
+
+      <with|par-left|<quote|2tab>|B.2.3.4<space|2spc><with|font-family|<quote|ss>|total-duration-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-348>>
+
+      <with|par-left|<quote|2tab>|B.2.3.5<space|2spc><with|font-family|<quote|ss>|is-final>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-349>>
+
+      <with|par-left|<quote|2tab>|B.2.3.6<space|2spc><with|font-family|<quote|ss>|current-height-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-350>>
+
+      <with|par-left|<quote|2tab>|B.2.3.7<space|2spc><with|font-family|<quote|ss>|current-time-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-351>>
+
+      <with|par-left|<quote|2tab>|B.2.3.8<space|2spc><with|font-family|<quote|ss>|current-distance-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-352>>
+
+      <with|par-left|<quote|2tab>|B.2.3.9<space|2spc><with|font-family|<quote|ss>|current-duration-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-353>>
+
+      <with|par-left|<quote|2tab>|B.2.3.10<space|2spc><with|font-family|<quote|ss>|current-is-Final>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-354>>
+
+      <with|par-left|<quote|2tab>|B.2.3.11<space|2spc><with|font-family|<quote|ss>|input-height-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-355>>
+
+      <with|par-left|<quote|2tab>|B.2.3.12<space|2spc><with|font-family|<quote|ss>|input-time-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-356>>
+
+      <with|par-left|<quote|2tab>|B.2.3.13<space|2spc><with|font-family|<quote|ss>|input-distance-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-357>>
+
+      <with|par-left|<quote|2tab>|B.2.3.14<space|2spc><with|font-family|<quote|ss>|input-duration-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-358>>
+
+      <with|par-left|<quote|2tab>|B.2.3.15<space|2spc><with|font-family|<quote|ss>|input-is-final>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-359>>
+
+      B.3<space|2spc><with|font-family|<quote|tt>|language|<quote|verbatim>|111...:
+      >Elements Jets <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-360>
+
+      <with|par-left|<quote|1tab>|B.3.1<space|2spc>Transaction
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-361>>
+
+      <with|par-left|<quote|1tab>|B.3.2<space|2spc>Time Locks
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-362>>
+
+      <with|par-left|<quote|2tab>|B.3.2.1<space|2spc><with|font-family|<quote|ss>|total-height-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-363>>
+
+      <with|par-left|<quote|2tab>|B.3.2.2<space|2spc><with|font-family|<quote|ss>|total-time-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-364>>
+
+      <with|par-left|<quote|2tab>|B.3.2.3<space|2spc><with|font-family|<quote|ss>|total-distance-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-365>>
+
+      <with|par-left|<quote|2tab>|B.3.2.4<space|2spc><with|font-family|<quote|ss>|total-duration-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-366>>
+
+      <with|par-left|<quote|2tab>|B.3.2.5<space|2spc><with|font-family|<quote|ss>|is-final>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-367>>
+
+      <with|par-left|<quote|2tab>|B.3.2.6<space|2spc><with|font-family|<quote|ss>|current-height-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-368>>
+
+      <with|par-left|<quote|2tab>|B.3.2.7<space|2spc><with|font-family|<quote|ss>|current-time-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-369>>
+
+      <with|par-left|<quote|2tab>|B.3.2.8<space|2spc><with|font-family|<quote|ss>|current-distance-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-370>>
+
+      <with|par-left|<quote|2tab>|B.3.2.9<space|2spc><with|font-family|<quote|ss>|current-duration-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-371>>
+
+      <with|par-left|<quote|2tab>|B.3.2.10<space|2spc><with|font-family|<quote|ss>|current-is-Final>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-372>>
+
+      <with|par-left|<quote|2tab>|B.3.2.11<space|2spc><with|font-family|<quote|ss>|input-height-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-373>>
+
+      <with|par-left|<quote|2tab>|B.3.2.12<space|2spc><with|font-family|<quote|ss>|input-time-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-374>>
+
+      <with|par-left|<quote|2tab>|B.3.2.13<space|2spc><with|font-family|<quote|ss>|input-distance-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-375>>
+
+      <with|par-left|<quote|2tab>|B.3.2.14<space|2spc><with|font-family|<quote|ss>|input-duration-lock>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-376>>
+
+      <with|par-left|<quote|2tab>|B.3.2.15<space|2spc><with|font-family|<quote|ss>|input-is-final>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-377>>
+
+      <with|par-left|<quote|1tab>|B.3.3<space|2spc>Issuance
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-378>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Appendix
+      C<space|2spc>Alternative Serialization of Simplicity DAGs>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-379><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Bibliography>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-176><vspace|0.5fn>
+      <no-break><pageref|auto-380><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
