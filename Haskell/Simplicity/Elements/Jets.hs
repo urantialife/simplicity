@@ -7,7 +7,7 @@ module Simplicity.Elements.Jets
   , getTermLengthCode, putTermLengthCode
   , fastEval
   -- * Re-exports
-  , unwrap
+  , WrappedSimplicity, unwrap
   ) where
 
 import Prelude hiding (fail, drop, take)
