@@ -9034,7 +9034,7 @@
   <subsubsection|<verbatim|1101100000...: >Jets for secp256k1>
 
   In this section we define <math|Scalar\<assign\><2><rsup|256>>,
-  <math|Short\<assign\><2>\<times\><2><rsup|128>>,
+  <math|<2><rsup|129>\<assign\><2>\<times\><2><rsup|128>>,
   <math|FE\<assign\><2><rsup|256>>, <math|GE\<assign\>FE\<times\>FE>, and
   <math|GEJ\<assign\>GE\<times\>FE>.
 
@@ -9141,6 +9141,30 @@
 
   \;
 
+  <paragraph|<samp|secp256k1-fe-is-zero>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-is-zero'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-is-zero>>:FE\<vdash\><2>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-fe-is-odd>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-fe-is-odd'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-fe-is-odd>>:FE\<vdash\><2>>
+
+  \;
+
   <paragraph|<samp|secp256k1-fe-is-quad>>
 
   \;
@@ -9237,23 +9261,15 @@
 
   \;
 
-  <paragraph|<samp|secp256k1-scalar-split>>
+  <paragraph|<samp|secp256k1-scalar-is-zero>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-scalar-split'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-scalar-is-zero'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-scalar-split>>:Scalar\<vdash\>Short\<times\>Short>
-
-  \;
-
-  <\with|color|red>
-    TODO Properties:
-
-    <math|\<lambda\>\<cdot\><around*|\<lceil\>|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|'secp256k1-scalar-split'>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|2<rsup|128>>+<around*|\<lceil\>|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|'secp256k1-scalar-split'>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|2<rsup|128>>\<equiv\><rsub|Scalar><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|256>>>
-  </with>
+  <math|<text|<samp|secp256k1-scalar-is-zero>>:Scalar\<vdash\><2>>
 
   \;
 
@@ -9278,6 +9294,10 @@
   </math>
 
   <math|<text|<samp|secp256k1-gej-normalize>>:GEJ\<vdash\>GE>
+
+  \;
+
+  Returns <math|<around*|(|0,0|)>> when passed infinity.
 
   \;
 
@@ -9365,7 +9385,8 @@
 
   \;
 
-  <paragraph|<samp|secp256k1-gej-equiv>>
+  <paragraph|<samp|secp256k1-gej-equiv> <with|color|red|Does not exist in
+  libsecp256k1>>
 
   \;
 
@@ -9385,59 +9406,19 @@
     <rep|<text|<samp|'secp256k1-gej-x-equiv'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-gej-x-equiv>>:FE\<times\>GEJ\<vdash\><2>>
+  <math|<text|<samp|secp256k1-gej-x-equiv>>:GEJ\<times\>FE\<vdash\><2>>
 
   \;
 
-  <paragraph|<samp|secp256k1-shamir>>
-
-  (Note: Support only recommened up to <math|2<rsup|n>\<leq\><with|color|red|TODO
-  8?>>.)
-
-  <\math>
-    <rep|<text|<samp|'secp256k1-shamir'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>\<cdummy\><rep|n+1|>
-  </math>
-
-  <math|<text|<samp|secp256k1-shamir>><rsub|2<rsup|n>>:Scalar\<times\><around*|(|Scalar\<times\>GEJ|)><rsup|2<rsup|n>>\<vdash\>GEJ>
-  for <math|0\<leq\>n>
-
-  <with|color|red|TODO Short version?>
-
-  \;
-
-  <paragraph|<samp|secp256k1-scale>>
+  <paragraph|<samp|secp256k1-gej-y-is-odd>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-scale'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-gej-y-is-odd'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-scale>>:Scalar\<times\>GEJ\<vdash\>GEJ>
-
-  \;
-
-  <paragraph|<samp|secp256k1-scale-short>>
-
-  \;
-
-  <\math>
-    <rep|<text|<samp|'secp256k1-scale-short'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
-  </math>
-
-  <math|<text|<samp|secp256k1-scale-short>>:Short\<vdash\>GEJ>
-
-  \;
-
-  <paragraph|<samp|secp256k1-scale-lambda>>
-
-  \;
-
-  <\math>
-    <rep|<text|<samp|'secp256k1-scale-lambda'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
-  </math>
-
-  <math|<text|<samp|secp256k1-scale-lambda>>:GEJ\<vdash\>GEJ>
+  <math|<text|<samp|secp256k1-gej-y-is-odd>>:GEJ\<vdash\><2>>
 
   \;
 
@@ -9453,49 +9434,88 @@
 
   \;
 
-  <paragraph|<samp|secp256k1-short-generate>>
+  <paragraph|<samp|secp256k1-scale>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-short-generate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-scale'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-short-generate>>:Short\<vdash\>GEJ>
+  <math|<text|<samp|secp256k1-scale>>:Scalar\<times\>GEJ\<vdash\>GEJ>
 
   \;
 
-  <paragraph|<samp|secp256k1-lambda-generate>>
+  <paragraph|<samp|secp256k1-linear-combination>>
+
+  (Note: Support only recommened up to <math|2<rsup|n>\<leq\><with|color|red|TODO
+  8?>>.)
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-linear-combination'>><rsub|2<rsup|n>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>\<cdummy\><rep|n+1|>
+  </math>
+
+  <math|<text|<samp|secp256k1-linear-combination>><rsub|2<rsup|n>>:<around*|(|Scalar\<times\>GEJ|)><rsup|2<rsup|n>>\<times\>Scalar\<vdash\>GEJ>
+  for <math|0\<leq\>n>
+
+  \;
+
+  <paragraph|<samp|secp256k1-ge-scale-lambda>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-lambda-generate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-scale-lambda'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-lambda-generate>>:Short\<vdash\>GEJ>
+  <math|<text|<samp|secp256k1-scale-lambda>>:GE\<vdash\>GE>
 
   \;
 
-  \;
-
-  <paragraph|<samp|secp256k1-scalar-wnaf5>>
-
-  <paragraph|<samp|secp256k1-scalar-wnaf16>>
-
-  <paragraph|<samp|secp256k1-short-wnaf5>>
-
-  <paragraph|<samp|secp256k1-short-wnaf16>>
-
-  <paragraph|<samp|secp256k1-odd-generate>>
+  <paragraph|<samp|secp256k1-gej-scale-lambda> <with|color|red|Consider
+  removing>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-odd-generate'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-scale-lambda'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-odd-generate>>:<2><rsup|16>\<vdash\>GE>
+  <math|<text|<samp|secp256k1-scale-lambda>>:GEJ\<vdash\>GEJ>
+
+  \;
+
+  <paragraph|<samp|secp256k1-scalar-split-lambda>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-scalar-split-lambda'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-scalar-split-lambda>>:Scalar\<vdash\><2><rsup|129>\<times\><2><rsup|129>>
+
+  \;
+
+  <\with|color|red>
+    TODO Properties:
+
+    <math|\<lambda\>\<cdot\><around*|\<lceil\>|\<pi\><rsub|1><around*|(|<around*|\<llbracket\>|<text|<samp|'secp256k1-scalar-split'>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|2<rsup|128>>+<around*|\<lceil\>|\<pi\><rsub|2><around*|(|<around*|\<llbracket\>|<text|<samp|'secp256k1-scalar-split'>>|\<rrbracket\>><around*|(|x|)>|)>|\<rceil\>><rsub|2<rsup|128>>\<equiv\><rsub|Scalar><around*|\<lceil\>|x|\<rceil\>><rsub|2<rsup|256>>>
+  </with>
+
+  \;
+
+  <paragraph|<samp|secp256k1-short-scalar>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-short-scalar'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-short-scalar>>:<2><rsup|129>\<vdash\>Scalar>
+
+  \;
 
   \;
 
@@ -9510,15 +9530,15 @@
 
   \;
 
-  <paragraph|<samp|bip0340-schnorr>>
+  <paragraph|<samp|bip0340-schnorr>-verify>
 
   (Note: this jet can fail.)
 
   <\math>
-    <rep|<text|<samp|'bip0340-schnorr'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'bip0340-schnorr-verify'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|bip0340-schnorr>>:<around*|(|Pubkey\<times\><2><rsup|256>|)>\<times\>Signature\<vdash\><1>>
+  <math|<text|<samp|bip0340-schnorr-verify>>:<around*|(|Pubkey\<times\><2><rsup|256>|)>\<times\>Signature\<vdash\><1>>
 
   \;
 
@@ -9562,39 +9582,63 @@
 
   \;
 
-  <paragraph|<samp|secp256k1-unpack-point>>
+  <paragraph|<samp|secp256k1-signature-unpack>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-unpack-point'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-signtaure-unpack'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-unpack-point>>:Point\<vdash\><maybe><around*|(|GE|)>>
+  <math|<text|<samp|secp256k1-signature-unpack>>:Signature\<vdash\><maybe><around*|(|FE\<times\>Scalar|)>>
 
   \;
 
-  <paragraph|<samp|secp256k1-unpack-pubkey>>
+  <paragraph|<samp|secp256k1-pubkey-unpack>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-unpack-pubkey'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-pubkey-unpack'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-unpack-pubkey>>:Pubkey\<vdash\><maybe><around*|(|GE|)>>
+  <math|<text|<samp|secp256k1-pubkey-unpack>>:Pubkey\<vdash\><maybe><around*|(|GE|)>>
 
   \;
 
-  <paragraph|<samp|secp256k1-unpack-signature>>
+  <paragraph|<samp|secp256k1-pubkey-unpack-neg>>
 
   \;
 
   <\math>
-    <rep|<text|<samp|'secp256k1-unpack-signtaure'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+    <rep|<text|<samp|'secp256k1-pubkey-unpack-neg'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
   </math>
 
-  <math|<text|<samp|secp256k1-unpack-signature>>:Pubkey\<vdash\><maybe><around*|(|FE\<times\>Scalar|)>>
+  <math|<text|<samp|secp256k1-pubkey-unpack-neg>>:Pubkey\<vdash\><maybe><around*|(|GE|)>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-pubkey-unpack-quad>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-pubkey-unpack-quad'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-pubkey-unpack-quad>>:Pubkey\<vdash\><maybe><around*|(|GE|)>>
+
+  \;
+
+  <paragraph|<samp|secp256k1-point-unpack>>
+
+  \;
+
+  <\math>
+    <rep|<text|<samp|'secp256k1-point-unpack'>>|>\<assign\><verbatim|<around*|[|110|]>><rsub|<2>>\<cdummy\><rep|<value|subsection-nr>|>\<cdummy\><rep|<value|subsubsection-nr>|>\<cdummy\><rep|<value|paragraph-nr>|>
+  </math>
+
+  <math|<text|<samp|secp256k1-point-unpack>>:Point\<vdash\><maybe><around*|(|GE|)>>
 
   \;
 
@@ -10739,19 +10783,19 @@
     <associate|auto-302|<tuple|B.1.4.1.36|?>>
     <associate|auto-303|<tuple|B.1.4.1.37|?>>
     <associate|auto-304|<tuple|B.1.4.1.38|?>>
-    <associate|auto-305|<tuple|B.1.4.1.39|?>>
-    <associate|auto-306|<tuple|B.1.4.1.40|?>>
-    <associate|auto-307|<tuple|B.1.5|?>>
-    <associate|auto-308|<tuple|B.1.5.1|?>>
-    <associate|auto-309|<tuple|B.1.5.1.1|?>>
+    <associate|auto-305|<tuple|B.1.5|?>>
+    <associate|auto-306|<tuple|B.1.5.1|?>>
+    <associate|auto-307|<tuple|B.1.5.1.1|?>>
+    <associate|auto-308|<tuple|B.1.5.1.2|?>>
+    <associate|auto-309|<tuple|B.1.5.1.3|?>>
     <associate|auto-31|<tuple|3.2.4|21>>
-    <associate|auto-310|<tuple|B.1.5.1.2|?>>
-    <associate|auto-311|<tuple|B.1.5.1.3|?>>
-    <associate|auto-312|<tuple|B.1.5.1.4|?>>
-    <associate|auto-313|<tuple|B.1.5.1.5|?>>
-    <associate|auto-314|<tuple|B.1.5.1.6|?>>
-    <associate|auto-315|<tuple|B.1.5.1.7|?>>
-    <associate|auto-316|<tuple|B.1.5.1.8|?>>
+    <associate|auto-310|<tuple|B.1.5.1.4|?>>
+    <associate|auto-311|<tuple|B.1.5.1.5|?>>
+    <associate|auto-312|<tuple|B.1.5.1.6|?>>
+    <associate|auto-313|<tuple|B.1.5.1.7|?>>
+    <associate|auto-314|<tuple|B.1.5.1.8|?>>
+    <associate|auto-315|<tuple|B.1.5.1.9|?>>
+    <associate|auto-316|<tuple|B.1.5.1.10|?>>
     <associate|auto-317|<tuple|B.1.6|?>>
     <associate|auto-318|<tuple|B.1.6.1|?>>
     <associate|auto-319|<tuple|B.1.6.1.1|?>>
@@ -10822,7 +10866,12 @@
     <associate|auto-378|<tuple|C|?>>
     <associate|auto-379|<tuple|C|?>>
     <associate|auto-38|<tuple|3.2.11|22>>
-    <associate|auto-380|<tuple|C|?>>
+    <associate|auto-380|<tuple|B.3.2.15|?>>
+    <associate|auto-381|<tuple|B.3.3|?>>
+    <associate|auto-382|<tuple|C|?>>
+    <associate|auto-383|<tuple|C|?>>
+    <associate|auto-384|<tuple|C|?>>
+    <associate|auto-385|<tuple|C|?>>
     <associate|auto-39|<tuple|3.3|22>>
     <associate|auto-4|<tuple|1.2.1|8>>
     <associate|auto-40|<tuple|3.3.1|23>>
