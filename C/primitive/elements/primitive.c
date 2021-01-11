@@ -145,12 +145,12 @@ size_t mallocBoundVars(unification_var** bound_var, size_t* word256_ix, size_t* 
 
 /* An enumeration of the names of Elements specific jets and primitives. */
 typedef enum jetName
-{ ADDER32
-, SUBTRACTOR32
-, MULTIPLIER32
-, FULLADDER32
-, FULLSUBTRACTOR32
-, FULLMULTIPLIER32
+{ ADD32
+, SUBTRACT32
+, MULTIPLY32
+, FULL_ADD32
+, FULL_SUBTRACT32
+, FULL_MULTIPLY32
 , SHA256_HASHBLOCK
 , VERSION
 , LOCKTIME
@@ -262,10 +262,10 @@ static int32_t decodePrimitive(jetName* result, bitstream* stream) {
       if (code < 0) return code;
 
       switch (code) {
-        case 0x0: return either(result, ADDER32, SUBTRACTOR32, stream);
-        case 0x1: *result = MULTIPLIER32; return 0;
-        case 0x2: return either(result, FULLADDER32, FULLSUBTRACTOR32, stream);
-        case 0x3: *result = FULLMULTIPLIER32; return 0;
+        case 0x0: return either(result, ADD32, SUBTRACT32, stream);
+        case 0x1: *result = MULTIPLY32; return 0;
+        case 0x2: return either(result, FULL_ADD32, FULL_SUBTRACT32, stream);
+        case 0x3: *result = FULL_MULTIPLY32; return 0;
       }
 
       assert(false);
@@ -288,37 +288,37 @@ static int32_t decodePrimitive(jetName* result, bitstream* stream) {
  */
 static once_flag static_initialized = ONCE_FLAG_INIT;
 static dag_node jet_node[] = {
- [ADDER32] =
+ [ADD32] =
     { .tag = JET
     , .jet = adder32
     , .sourceIx = word64
     , .targetIx = twoTimesWord32
     },
- [SUBTRACTOR32] =
+ [SUBTRACT32] =
     { .tag = JET
     , .jet = subtractor32
     , .sourceIx = word64
     , .targetIx = twoTimesWord32
     },
- [MULTIPLIER32] =
+ [MULTIPLY32] =
     { .tag = JET
     , .jet = multiplier32
     , .sourceIx = word64
     , .targetIx = word64
     },
- [FULLADDER32] =
+ [FULL_ADD32] =
     { .tag = JET
     , .jet = fullAdder32
     , .sourceIx = twoTimesWord64
     , .targetIx = twoTimesWord32
     },
- [FULLSUBTRACTOR32] =
+ [FULL_SUBTRACT32] =
     { .tag = JET
     , .jet = fullSubtractor32
     , .sourceIx = twoTimesWord64
     , .targetIx = twoTimesWord32
     },
- [FULLMULTIPLIER32] =
+ [FULL_MULTIPLY32] =
     { .tag = JET
     , .jet = fullMultiplier32
     , .sourceIx = word128
@@ -559,13 +559,13 @@ static void static_initialize(void) {
   } while(0)
 
     /* Jets are identified by their specification's identity Merkle roots. */
-    MK_JET(ADDER32,          0x73b3315bu, 0xdec731edu, 0xb09c5187u, 0x2782249cu, 0x9515e149u, 0x078c0e61u, 0x95b8e546u, 0x532e5584u);
-    MK_JET(FULLADDER32,      0xa20bf848u, 0xb6cd6637u, 0x5469a520u, 0x1f41507bu, 0xf24dadc8u, 0xd5d3aeacu, 0x07c8ddc9u, 0x278e3041u);
-    MK_JET(SUBTRACTOR32,     0x51b9d49cu, 0x79e50235u, 0xb40333a8u, 0xa1d3cf56u, 0x54ff583eu, 0x65109570u, 0xc3d9202bu, 0x5080cd9au);
-    MK_JET(FULLSUBTRACTOR32, 0xbbf14525u, 0xa1bdfa57u, 0x373772c8u, 0xc12202adu, 0x918e43f2u, 0x178f2be7u, 0x33c3c365u, 0x3fd58cedu);
-    MK_JET(MULTIPLIER32,     0xfca03a42u, 0xe8f84210u, 0xb0bebe3fu, 0xbdc10628u, 0x670ba7b2u, 0x96926316u, 0x121131a5u, 0x9375a9d8u);
-    MK_JET(FULLMULTIPLIER32, 0x342e643fu, 0x60a1fc90u, 0xe4488d3du, 0xeea7e9a0u, 0xb6bfabe9u, 0xd0e0e7a8u, 0xc9ce2535u, 0x8a86db87u);
-    MK_JET(SHA256_HASHBLOCK, 0xda10f0e8u, 0x530695d0u, 0x7564f0b3u, 0x2feebe77u, 0x265a1d69u, 0xcf802e22u, 0xd77289dau, 0xf6641b8du);
+    MK_JET(ADD32,            0xe40466a7u, 0xecf71ce8u, 0x62fb3c15u, 0x4c1e8f84u, 0x5d7e5707u, 0x463a8945u, 0x37a32fc7u, 0x214900adu);
+    MK_JET(FULL_ADD32,       0x4727361eu, 0xa003c1a4u, 0x83e57505u, 0xcf5b405au, 0x8227da1au, 0xddc47e2bu, 0x016c2d09u, 0xbe047fe8u);
+    MK_JET(SUBTRACT32,       0xf76ecad1u, 0xfda50f13u, 0x5bdfe3e5u, 0x33a15009u, 0x8f406261u, 0xc76f6dbfu, 0x6725f1e3u, 0x883c2ae2u);
+    MK_JET(FULL_SUBTRACT32,  0x6d96f68au, 0x945c22e7u, 0x62115c09u, 0x4297b194u, 0xbedc0ce5u, 0xa0c92db6u, 0x4b830a18u, 0xb44df0d0u);
+    MK_JET(MULTIPLY32,       0x161fd03au, 0x92c621b3u, 0x289849ffu, 0x29ad8134u, 0x99d63ed9u, 0x73db0e97u, 0x51785421u, 0xf568d18fu);
+    MK_JET(FULL_MULTIPLY32,  0xaac25361u, 0xe598e354u, 0x38b918b5u, 0x8fd2cef4u, 0xdb3c5d8cu, 0x5e63aa4fu, 0x25e9cec0u, 0xcfd9dfb1u);
+    MK_JET(SHA256_HASHBLOCK, 0xdfc927d3u, 0x9bf7147au, 0x8b0a7f43u, 0x79466870u, 0x824db102u, 0x090a0036u, 0x2923a377u, 0xa91af681u);
 #undef MK_JET
 
   }
