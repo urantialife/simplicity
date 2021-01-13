@@ -8008,6 +8008,9 @@
 
     <item>Jets for hash functions, including the SHA-256 compression
     function.
+
+    <item>Jets for elliptic curve functions, including Schnorr signature
+    verification.
   </itemize>
 
   These modules also reexport specialized instances of <verbatim|jetSubst>

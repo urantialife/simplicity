@@ -17,13 +17,13 @@ import Prelude hiding (fail, drop, take, subtract)
 import Control.Arrow (Kleisli(Kleisli), runKleisli)
 import qualified Data.Map as Map
 import Data.Type.Equality ((:~:)(Refl))
-import Data.Void (Void, vacuous)
 
 import Simplicity.Digest
 import Simplicity.FFI.Jets as FFI
 import Simplicity.MerkleRoot
 import Simplicity.Serialization
 import Simplicity.Programs.Arith
+import qualified Simplicity.Programs.LibSecp256k1.Lib as LibSecp256k1
 import qualified Simplicity.Programs.Sha256.Lib as Sha256
 import Simplicity.Term.Core
 
@@ -38,6 +38,7 @@ data CoreJet a b where
   Multiply32 :: CoreJet (Word32, Word32) Word64
   FullMultiply32 :: CoreJet ((Word32, Word32), (Word32, Word32)) Word64
   Sha256HashBlock :: CoreJet (Sha256.Hash, Sha256.Block) Sha256.Hash
+  Bip0340Verify :: CoreJet ((LibSecp256k1.PubKey, Word256), LibSecp256k1.Sig) ()
 
 deriving instance Eq (CoreJet a b)
 deriving instance Show (CoreJet a b)
@@ -51,6 +52,7 @@ specification FullSubtract32 = full_subtract word32
 specification Multiply32 = multiply word32
 specification FullMultiply32 = full_multiply word32
 specification Sha256HashBlock = Sha256.hashBlock
+specification Bip0340Verify = LibSecp256k1.bip0340_verify
 
 -- | A jetted implementaiton for "core" jets.
 --
@@ -77,17 +79,18 @@ implementation FullMultiply32 = \((x, y), (a, b)) -> do
   let z = fromWord32 x * fromWord32 y + fromWord32 a + fromWord32 b
   return (toWord64 z)
 implementation Sha256HashBlock = FFI.sha256_hashBlock
+implementation Bip0340Verify = FFI.schnorrAssert
 
 -- | A canonical deserialization operation for "core" jets.  This can be used to help instantiate the 'Simplicity.JetType.getJetBit' method.
-getJetBit :: (Monad m) => m Void -> m Bool -> m (SomeArrow CoreJet)
-getJetBit abort next = (getWordJet & getFullWordJet) & (getHashJet & getEcJet)
+getJetBit :: (Monad m) => mVoid -> m Bool -> m (SomeArrow CoreJet)
+getJetBit _abort next = (getWordJet & getFullWordJet) & (getHashJet & getEcJet)
  where
   getWordJet = (makeArrow Add32 & makeArrow Subtract32)
              & makeArrow Multiply32
   getFullWordJet = (makeArrow FullAdd32 & makeArrow FullSubtract32)
                  & makeArrow FullMultiply32
   getHashJet = makeArrow Sha256HashBlock
-  getEcJet = vacuous abort -- TODO
+  getEcJet = makeArrow Bip0340Verify
   l & r = next >>= \b -> if b then r else l
   -- makeArrow :: (TyC a, TyC b, Monad m) => (forall term. (Core term) => term a b) -> m (SomeArrow JetSpec)
   makeArrow p = return (SomeArrow p)
@@ -101,6 +104,7 @@ putJetBit FullAdd32        = ([o,i,o,o]++)
 putJetBit FullSubtract32   = ([o,i,o,i]++)
 putJetBit FullMultiply32   = ([o,i,i]++)
 putJetBit Sha256HashBlock  = ([i,o]++)
+putJetBit Bip0340Verify    = ([i,i]++)
 
 -- | A 'Map.Map' from the identity roots of the "core" jet specification to their corresponding token.
 -- This can be used to help instantiate the 'Simplicity.JetType.matcher' method.
@@ -113,6 +117,7 @@ coreJetMap = Map.fromList
   , mkAssoc FullSubtract32
   , mkAssoc FullMultiply32
   , mkAssoc Sha256HashBlock
+  , mkAssoc Bip0340Verify
   ]
  where
   mkAssoc :: (TyC a, TyC b) => CoreJet a b -> (Hash256, (SomeArrow CoreJet))

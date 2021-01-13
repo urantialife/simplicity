@@ -15,7 +15,7 @@ tested-with:         GHC ==8.6.4
 
 library Simplicity-Core
   C-sources:           libsha256compression/sha256/compression.c,
-                       C/frame.c, C/jets.c,
+                       C/frame.c, C/jets.c, C/jets-secp256k1.c,
                        Haskell/cbits/frame.c, Haskell/cbits/jets.c
   Include-dirs:        libsha256compression/include,
                        C

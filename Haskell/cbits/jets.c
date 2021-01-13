@@ -27,3 +27,19 @@ bool c_fullMultiplier32(frameItem* dst, const frameItem *src) {
 bool c_sha256_hashBlock(frameItem* dst, const frameItem* src) {
   return sha256_hashBlock(dst, *src, NULL);
 }
+
+bool c_fe_sqrt(frameItem* dst, const frameItem* src) {
+  return fe_sqrt(dst, *src, NULL);
+}
+
+bool c_offsetPoint(frameItem* dst, const frameItem* src) {
+  return offsetPoint(dst, *src, NULL);
+}
+
+bool c_ecmult(frameItem* dst, const frameItem* src) {
+  return ecmult(dst, *src, NULL);
+}
+
+bool c_schnorrAssert(frameItem* dst, const frameItem* src) {
+  return schnorrAssert(dst, *src, NULL);
+}

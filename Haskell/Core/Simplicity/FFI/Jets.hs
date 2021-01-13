@@ -5,6 +5,8 @@ module Simplicity.FFI.Jets
  , subtractor32, fullSubtractor32
  , multiplier32, fullMultiplier32
  , sha256_hashBlock
+ , fe_sqrt, offsetPoint, ecmult
+ , schnorrAssert
  ) where
 
 import Foreign.Ptr (Ptr)
@@ -46,3 +48,15 @@ fullMultiplier32 = unsafeLocalCoreJet c_fullMultiplier32
 
 sha256_hashBlock :: (Sha256.Hash, Sha256.Block) -> Maybe Sha256.Hash
 sha256_hashBlock = unsafeLocalCoreJet c_sha256_hashBlock
+
+fe_sqrt :: LibSecp256k1.FE -> Maybe (Either () LibSecp256k1.FE)
+fe_sqrt = unsafeLocalCoreJet c_fe_sqrt
+
+offsetPoint :: (LibSecp256k1.GEJ, LibSecp256k1.GE) -> Maybe (LibSecp256k1.FE, LibSecp256k1.GEJ)
+offsetPoint = unsafeLocalCoreJet c_offsetPoint
+
+ecmult :: ((LibSecp256k1.GEJ, LibSecp256k1.Scalar), LibSecp256k1.Scalar) -> Maybe (LibSecp256k1.GEJ)
+ecmult = unsafeCoreJet c_ecmult -- c_ecmult initializes global variables
+
+schnorrAssert :: ((LibSecp256k1.PubKey, Sha256.Hash), LibSecp256k1.Sig) -> Maybe ()
+schnorrAssert = unsafeCoreJet c_schnorrAssert -- c_schnorrAssert initializes global variables
